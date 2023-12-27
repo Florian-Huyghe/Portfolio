@@ -9,8 +9,8 @@ section.skills{
     background-color: rgb(20, 20, 20);
 }
 section.skills h1{
-    position: absolute;
-    top: 100px;
+    position: relative;
+    margin: 100px 0 0 0;
     font-size: 4rem;
     color: rgb(201, 201, 201);
 }
