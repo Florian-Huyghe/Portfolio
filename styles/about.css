@@ -105,3 +105,8 @@ section.about img{
         width: 80%;
     }
 }
+@media screen and (max-width: 400px) {
+    section.about h1{
+        font-size: 1.7rem;
+    }
+}
