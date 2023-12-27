@@ -1,0 +1,89 @@
+section.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    background-color: rgb(43, 43, 43);
+}
+section.contact h1{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 10px;
+    height: 150px;
+    font-size: 4rem;
+    color: rgb(201, 201, 201);
+}
+section.contact div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.contact div.contact-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.contact div p{
+    color: rgb(201, 201, 201);
+    font-size: 2.2rem;
+    margin: 0 30px 30px 0 ;
+}
+section.contact div div.contact-icon a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+section.contact div.contact-icon a span,
+section.contact div.contact-icon a i{
+    font-size: 1.3rem;
+}
+
+section.contact div.contact-icon a:hover{
+    scale: 1.1;
+}
+
+/**
+    Responsive
+*/
+/* Styles pour les grands écrans */
+@media screen and (min-width: 768px) {
+    section.contact {
+      height: 60vh;
+    }
+  }
+  
+  /* Styles pour les écrans moyens ou tablettes */
+  @media screen and (max-width: 767px) {
+    section.contact h1 {
+      font-size: 3rem;
+      height: auto;
+    }
+    
+    section.contact div.contact-icon a {
+      margin: 8px 0;
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Styles pour les petits écrans ou smartphones */
+  @media screen and (max-width: 480px) {
+    section.contact {
+      height: auto;
+    }
+  
+    section.contact h1 {
+      font-size: 2.5rem;
+    }
+    
+    section.contact div.contact-icon a {
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+  }
+  

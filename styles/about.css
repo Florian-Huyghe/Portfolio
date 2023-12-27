@@ -1,0 +1,107 @@
+section.about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: rgb(201, 201, 201);
+    background-color: rgb(20, 20, 20);
+}
+section.about h1{
+    position: absolute;
+    top: 100px;
+    font-size: 4rem;
+    color: rgb(201, 201, 201);
+}
+section.about div.about-txt{
+    position: absolute;
+    top: 230px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 75%;
+    padding: 40px 0;
+}
+
+section.about div.about-txt  div article{
+    width: 50vh;
+    height: 250px;
+    margin: 50px 0;
+    padding: 30px 20px;
+    border-radius: 50px;
+    background: linear-gradient(225deg, #121212, #151515);
+    box-shadow:  -40px 40px 80px #080808,
+                 40px -40px 80px #202020;
+}
+section.about div.about-txt article a{
+    transition: all 0.3s ease-in-out;
+    color: rgb(201, 201, 201);
+    text-decoration: underline;
+}
+section.about div.about-txt article a:hover{
+    color: rgb(83, 83, 83);
+    text-decoration: underline;
+}
+section.about img{
+    border-radius: 10px;
+}
+
+/**
+    Responsive
+*/
+@media screen and (max-width: 1200px) {
+
+    section.about{
+        display: flex;
+        justify-content: center;
+        height: 130vh;
+    }
+    section.about div.about-txt{
+        display: flex;
+        justify-content: center;
+    }
+    section.about div.about-txt div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section.about h1 {
+        font-size: 3rem;
+        top: 50px;
+    }
+
+    section.about img{
+        position: relative;
+        width: 400px;
+        z-index: 2;
+    }
+    section.about div.about-txt {
+        top: 180px;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    section.about div.about-txt  div article {
+        width: 80%;
+        height: auto;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    section.about{
+        height: 170vh;
+    }
+
+    section.about h1{
+        top: 20px;
+        font-size: 1.7rem;
+    }
+    section.about img{
+        margin: 70px 0 0 0;
+        width: 80%;
+    }
+}

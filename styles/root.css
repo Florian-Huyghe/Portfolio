@@ -1,0 +1,24 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(27, 27, 27);
+    overflow-x: hidden;
+}
+
+/**
+    scrollbar 
+*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}

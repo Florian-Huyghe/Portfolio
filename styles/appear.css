@@ -1,0 +1,70 @@
+
+/** 
+    css for fade in up animation
+    js : appearOnTheScreen.js
+*/
+[class*="reveal-"]{
+    opacity: 0;
+    transform: translateY(-30px);
+
+}
+.reveal-2{
+    transition-delay: .1s;
+}
+
+.reveal-3{
+    transition-delay: .2s;
+}
+.reveal-4{
+    transition-delay: .3s;
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1.5s cubic-bezier(.5,0,0,1);
+}
+
+/**
+    problem case management
+*/
+
+section.degree ul li[class*="reveal-"]{
+    animation: 1.5s fadeInUp forwards;
+}
+section.degree ul li article.reveal-2{
+    transition-delay: .1s;
+}
+
+section.degree ul li article.reveal-3{
+    transition-delay: .2s;
+}
+
+
+section.skills ul li[class*="reveal-"]{
+    animation: 1.5s fadeInUp forwards;
+}
+section.skills ul li article.reveal-2{
+    transition-delay: .1s;
+}
+
+section.skills ul li article.reveal-3{
+    transition-delay: .2s;
+}
+section.skills ul li article.reveal-4{
+    transition-delay: .3s;
+}
+/**
+    animation
+*/
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(0); /* Translation vers le bas pour commencer */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-30px);
+  }
+}
