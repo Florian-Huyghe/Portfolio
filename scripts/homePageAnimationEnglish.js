@@ -9,7 +9,7 @@ new Typewriter(txtAnim, {
 .typeString('a Computer Science student ! ')
 .pauseFor(1000)
 .deleteChars(27)
-.typeString('<span style="color:#041e91"> Web Development </span> student ! ')
+.typeString('<span style="color:#243fb5"> Web Development </span> student ! ')
 .pauseFor(1000)
 .deleteChars(27)
 .typeString('<span style="color:#087004"> Cybersecurity </span> student ! ')
