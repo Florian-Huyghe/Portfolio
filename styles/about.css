@@ -102,11 +102,11 @@ section.about img{
     }
 
     section.about h1{
-        top: 20px;
+        margin: 70px 0 0 0;
         font-size: 1.7rem;
     }
     section.about img{
-        margin: 70px 0 0 0;
+        margin: 140px 0 0 0;
         width: 80%;
     }
 }
