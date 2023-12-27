@@ -83,7 +83,7 @@ section.contact div.contact-icon a:hover{
   /* Styles pour les petits écrans ou smartphones */
   @media screen and (max-width: 480px) {
     section.contact {
-      height: auto;
+      height: 80vh;
     }
   
     section.contact h1 {
