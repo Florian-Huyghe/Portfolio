@@ -92,7 +92,7 @@ section.home-page button {
 @keyframes fadeInUp {
     0% {
       opacity: 0;
-      transform: translateY(20px); /* Translation vers le bas pour commencer */
+      transform: translateY(20px); 
     }
     100% {
       opacity: 1;
