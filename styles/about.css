@@ -73,8 +73,6 @@ section.about img{
     }
     section.about h1 {
         margin: 70px 0 0 0;
-        font-size: 3rem;
-        margin: 0;
     }
 
     section.about img{
@@ -103,9 +101,6 @@ section.about img{
         height: 170vh;
     }
 
-    section.about h1{
-        font-size: 3rem;
-    }
     section.about img{
         width: 80%;
     }
