@@ -107,6 +107,6 @@ section.about img{
 }
 @media screen and (max-width: 400px) {
     section.about h1{
-        font-size: 1.7rem;
+        font-size: 4rem;
     }
 }
