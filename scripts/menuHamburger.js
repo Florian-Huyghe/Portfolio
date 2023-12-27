@@ -2,6 +2,7 @@ const menuHamburger = document.querySelector('header span.menu-hamburger');
 const navLinks = document.querySelector('header nav.navbar');
 var links = [...document.querySelectorAll("header nav a")];
 var i=0;
+
 var setupListeners = function(){
     menuHamburger.addEventListener('click', animMenuHamburger );
     for(let i=0; i<links.length; i++){
@@ -23,5 +24,4 @@ var removeMenu = function(){
     navLinks.classList.remove('mobile-menu');
     menuHamburger.textContent = 'menu';
 }
-
 setupListeners();

@@ -24,6 +24,7 @@ nav{
     justify-content: space-evenly; 
     align-items: center;
     width: 700px;
+    z-index: 10 ;
 }
 nav a{
     position: relative;

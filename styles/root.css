@@ -10,8 +10,10 @@ body{
     background-color: rgb(27, 27, 27);
     overflow-x: hidden;
 }
-
-/**
+html{
+    overflow-x: hidden;
+}
+/*
     scrollbar 
 */
 ::-webkit-scrollbar {
