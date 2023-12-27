@@ -72,11 +72,13 @@ section.about img{
         align-items: center;
     }
     section.about h1 {
+        margin: 70px 0 0 0;
         font-size: 3rem;
         margin: 0;
     }
 
     section.about img{
+        margin: 140px 0 0 0;
         position: relative;
         width: 400px;
         z-index: 2;
@@ -102,11 +104,9 @@ section.about img{
     }
 
     section.about h1{
-        margin: 70px 0 0 0;
         font-size: 1.7rem;
     }
     section.about img{
-        margin: 140px 0 0 0;
         width: 80%;
     }
 }
