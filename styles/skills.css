@@ -77,7 +77,7 @@ section.skills ul li article p.tittle{
 @media screen and (max-width: 450px) {
     section.skills{
         margin-bottom: 220vh;
-        height: 200vh;
+        height: 150vh;
     }
 }
 @media screen and (max-width: 400px) {
