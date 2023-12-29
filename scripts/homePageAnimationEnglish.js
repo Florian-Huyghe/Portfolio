@@ -1,9 +1,9 @@
 const txtAnim = document.getElementById('typewriter-effect');
 
 new Typewriter(txtAnim, {
-    deleteSpeed: 20
+    deleteSpeed: 15
 })
-.changeDelay(35)
+.changeDelay(40)
 .typeString('I\'m Florian Huyghe,<br>')
 .pauseFor(300)
 .typeString('a Computer Science student ! ')
