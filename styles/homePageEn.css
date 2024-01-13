@@ -1,0 +1,145 @@
+/**
+    style for the animation homme page
+*/
+.Typewriter__wrapper{
+    color: rgb(200, 200, 200);
+    font-size: 2.7rem;
+}
+
+.Typewriter__cursor{
+    color: rgb(200,200,200);
+    font-size: 2.7rem;
+}
+
+/**
+    Home Page
+*/
+
+section.home-page{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(34,34,34);
+    background: linear-gradient(22deg, rgba(34,34,34,1) 0%, rgba(36,36,36,1) 57%, rgba(176,176,176,1) 100%);
+}
+
+section.home-page div.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 0 0 calc(10vh + 10px) ;
+    padding: 10vh 0 0 0;
+    gap: 20px;
+}
+section.home-page article {
+    opacity: 0;
+    font-size: 1.3rem;
+    color: white;
+    animation: fadeInUp 1s 8.5s forwards;
+}
+
+section.home-page button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34%;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ffffff80; 
+    opacity: 0;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80; 
+    transition: 0.5s ease;
+    user-select: none;
+    animation: fadeInUp 1s 8.8s forwards;
+  }
+  
+  section.home-page button:hover{
+    color: #ffffff;
+    background: #00cc66; 
+    border: 1px solid #00cc66;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #00cc66,
+                0 0 20px #00cc66,
+                0 0 50px #00cc66,
+                0 0 100px #00cc66;
+  }
+  section.home-page button.clicked{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: #00cc66; 
+    border: 1px solid #00cc66;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #00cc66,
+                0 0 20px #00cc66,
+                0 0 50px #00cc66,
+                0 0 100px #00cc66;
+  }
+/**
+    animation
+*/
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/**
+    Responsive
+*/
+@media screen and (max-width: 900px) {
+    section.home-page div.presentation{
+        margin: 0 0 0 calc(2vh + 10px);
+    }
+}
+@media screen and (max-width: 650px) {
+
+    section.home-page h1 {
+        font-size: 2rem;
+    }
+
+    section.home-page article {
+        font-size: 1rem;
+    }
+    section.home-page button {
+        width: 28%;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 530px) {
+    section.home-page button {
+        width: 30%;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 426px) {
+    section.home-page button {
+        width: 38%;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    section.home-page button {
+        width: 45%;
+        font-size: 0.7rem;
+    }
+}
