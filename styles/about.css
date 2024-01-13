@@ -3,7 +3,7 @@ section.about{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     color: rgb(201, 201, 201);
     background-color: rgb(20, 20, 20);
 }
@@ -12,19 +12,20 @@ section.about h1{
     justify-content: center;
     align-items: center;
     margin: 80px 0 0 0;
-    width: 100%;
     font-size: 4rem;
     color: rgb(201, 201, 201);
     z-index: 2;
 }
 section.about div.about-txt{
-    position: absolute;
-    top: 230px;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     height: 75%;
     padding: 40px 0;
+}
+section.about img{
+    width: 600px;
+    aspect-ratio: 1;
 }
 
 section.about div.about-txt  div article{
@@ -59,7 +60,6 @@ section.about img{
         display: flex;
         align-items: center;
         padding: 70px 0 0 0;
-        height: 140vh;
     }
     section.about div.about-txt{
         display: flex;
@@ -76,13 +76,11 @@ section.about img{
     }
 
     section.about img{
-        margin: 140px 0 0 0;
-        position: relative;
         width: 400px;
         z-index: 2;
     }
     section.about div.about-txt {
-        top: 180px;
+
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
@@ -97,9 +95,6 @@ section.about img{
     }
 }
 @media screen and (max-width: 450px) {
-    section.about{
-        height: 170vh;
-    }
 
     section.about img{
         width: 80%;

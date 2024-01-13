@@ -2,25 +2,24 @@ section.skills{
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 130vh;
+    min-height: 100vh;
     color: rgb(201, 201, 201);
     background-color: rgb(20, 20, 20);
 }
 section.skills h1{
-    position: relative;
+    margin: 90px 0 0 0;
     font-size: 4rem;
     color: rgb(201, 201, 201);
 }
 section.skills ul{
     position: relative;
-    top: 100px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 30px 0;
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     list-style-type: none;
 }
 section.skills ul li{
@@ -32,6 +31,9 @@ section.skills ul li{
     box-shadow:  -40px 40px 80px #080808,
                  40px -40px 80px #202020;
 } 
+section.skills ul li article{
+    z-index: 10;
+}
 section.skills ul li article p{
     font-size: 16px;
 }
@@ -46,47 +48,20 @@ section.skills ul li article p.tittle{
 /**
     Responsive
 */
-@media screen and (max-width: 1609px){
-    section.skills{
-        margin-bottom: 100vh;
-    }
-}
-@media screen and (max-width: 809px){
-    section.skills{
-        margin-bottom: 200vh;
-    }
-}
 @media screen and (max-width: 768px) {
     section.skills h1 {
         font-size: 3rem;
-        top: 50px;
-    }
-    section.skills ul {
-        top: 150px;
+    
     }
     section.skills ul li {
         width: 80%;
         margin: 10px 0;
     }
+    section.skills ul li:last-child{
+        margin-bottom: 30px;
+    }
     section.skills ul li article p.tittle {
         font-size: 1.5rem;
         margin: 0;
-    }
-}
-@media screen and (max-width: 450px) {
-    section.skills{
-        margin-bottom: 270vh;
-        height: 100vh;
-    }
-}
-@media screen and (max-width: 400px) {
-    section.skills{
-        margin-bottom: 250vh;
-        height: 155vh;
-    }
-}
-@media screen and (max-width: 380px) {
-    section.skills{
-        margin-bottom: 340vh;
     }
 }

@@ -3,7 +3,8 @@ section.contact{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50vh;
+
+    min-height: 50vh;
     background-color: rgb(43, 43, 43);
 }
 section.contact h1{
@@ -19,6 +20,7 @@ section.contact div{
     display: flex;
     justify-content: center;
     align-items: center;
+
     padding: 15px;
     background-color: rgb(27, 27, 27);
     box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.5);
@@ -57,42 +59,35 @@ section.contact div.contact-icon a:hover{
     Responsive
 */
 /* Styles pour les grands écrans */
-@media screen and (min-width: 768px) {
-    section.contact {
-      height: 60vh;
-    }
-  }
+
   /* Styles pour les écrans moyens ou tablettes */
-  @media screen and (max-width: 767px) {
-    section.contact h1 {
-      font-size: 3rem;
-      height: auto;
-    }
+@media screen and (max-width: 767px) {
+  section.contact h1 {
+    font-size: 3rem;
+    height: auto;
+  }
     
-    section.contact div.contact-icon a {
-      margin: 8px 0;
-      font-size: 1.1rem;
-    }
+  section.contact div.contact-icon a {
+    margin: 8px 0;
+    font-size: 1.1rem;
   }
-  @media screen and (max-width: 701px) {
-    section.contact div{
-      flex-direction: column;
-      width: 98%;
-    }
+}
+@media screen and (max-width: 701px) {
+  section.contact div{
+    flex-direction: column;
+    width: 98%;
   }
+}
   /* Styles pour les petits écrans ou smartphones */
-  @media screen and (max-width: 480px) {
-    section.contact {
-      height: 80vh;
-    }
+@media screen and (max-width: 480px) {
   
-    section.contact h1 {
-      font-size: 2.5rem;
-    }
-    
-    section.contact div.contact-icon a {
-      margin: 5px 0;
-      font-size: 1rem;
-    }
+  section.contact h1 {
+    font-size: 2.5rem;
   }
+    
+  section.contact div.contact-icon a {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+}
   

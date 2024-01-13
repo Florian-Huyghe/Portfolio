@@ -19,7 +19,7 @@ section.home-page{
     position: relative;
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(34,34,34);
     background: linear-gradient(22deg, rgba(34,34,34,1) 0%, rgba(36,36,36,1) 57%, rgba(176,176,176,1) 100%);
 }
@@ -109,9 +109,7 @@ section.home-page button {
     }
 }
 @media screen and (max-width: 650px) {
-    section.home-page{
-        height: 60vh;
-    }
+
     section.home-page h1 {
         font-size: 2rem;
         top: 20vh;
@@ -152,9 +150,7 @@ section.home-page button {
     }
 } 
 @media screen and (max-width: 400px){
-    section.home-page{
-        height: 667px;
-    }
+
     section.home-page article {
         top: 55vh;
     }

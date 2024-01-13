@@ -4,19 +4,17 @@ section.degree{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     color: rgb(201, 201, 201);
     background-color: rgb(43, 43, 43);
 }
 section.degree h1{
-    position: absolute;
-    top: 100px;
+    margin: 80px 0 0 0;
     font-size: 4rem;
     color: rgb(201, 201, 201);
 }
 section.degree ul{
-    position: absolute;
-    top: 230px;
+    margin: 30px 0;
     height: 70vh;
     list-style-type: none;
 }
@@ -70,16 +68,12 @@ section.degree ul li article p.calendar{
     Responsive
 */
 @media screen and (max-width: 768px) {
-    section.degree{
-        height: 1000px;
-    }
     section.degree h1 {
         font-size: 3rem;
         top: 50px;
     }
 
     section.degree ul {
-        top: 150px;
         height: auto;
         display: flex;
         align-items: center;
