@@ -30,7 +30,7 @@ section.about img{
 
 section.about div.about-txt  div article{
     width: 50vh;
-    height: 250px;
+    min-height: 250px;
     margin: 50px 0;
     padding: 30px 20px;
     border-radius: 50px;
