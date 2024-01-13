@@ -119,12 +119,12 @@ section.home-page button {
 
     section.home-page article {
         font-size: 1rem;
-        animation: fadeInUp 1s 9.7s forwards;
+        animation: fadeInUp 1s 10.3s forwards;
     }
     section.home-page button {
         width: 20%;
         font-size: 0.9rem;
-        animation: fadeInUp 1s 10s forwards;
+        animation: fadeInUp 1s 10.6s forwards;
     }
 }
 @media screen and (max-width: 530px) {
