@@ -15,7 +15,7 @@ section.degree h1{
 }
 section.degree ul{
     margin: 30px 0;
-    height: 70vh;
+    min-height: 70vh;
     list-style-type: none;
 }
 section.degree ul li:nth-child(2){
@@ -56,7 +56,7 @@ section.degree ul li:nth-child(-n+2)::after{
     left: -46px;
     content: '';
     width: 2px;
-    height: 25vh;
+    height: 175%;
     background-color: white;
 }
 section.degree ul li article p.calendar{
