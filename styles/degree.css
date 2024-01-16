@@ -85,6 +85,9 @@ section.degree ul li article p.calendar{
         margin: 10px 0;
         width: 90%;
     }
+    section.degree ul li::before{
+        display: none;
+    }
     section.degree ul li:nth-child(-n+2)::after {
         display: none;
     }
