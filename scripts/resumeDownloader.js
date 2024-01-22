@@ -12,8 +12,8 @@ var setupListeners = function(){
  */
 var download = function() {
     var lienTelechargement = document.createElement('a');
-    lienTelechargement.href = 'chemin/vers/votre/fichier.pdf'; // Remplacez par le chemin ou l'URL de votre fichier
-    lienTelechargement.setAttribute('download', 'nom-du-fichier.pdf'); // Remplacez par le nom du fichier à télécharger
+    lienTelechargement.href = 'docs/FlorianHuygheCV.pdf'; 
+    lienTelechargement.setAttribute('download', 'FlorianHuygheCV.pdf'); 
 
     lienTelechargement.click();
 }
