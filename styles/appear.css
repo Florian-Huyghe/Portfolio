@@ -41,7 +41,7 @@ section.degree ul li article.reveal-3{
 }
 
 
-section.skills ul li[class*="reveal-"]{
+section.skills ul li article[class*="reveal-"]{
     animation: 1.5s fadeInUp forwards;
 }
 section.skills ul li article.reveal-2{
