@@ -24,15 +24,24 @@ section.skills ul{
     list-style-type: none;
 }
 section.skills ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     border-radius: 15px;
     margin: 30px 0;
-    padding: 15px;
     background: linear-gradient(225deg, #121212, #151515);
     box-shadow:  -40px 40px 80px #080808,
                  40px -40px 80px #202020;
 } 
 section.skills ul li article{
+    width: 400px;
+    min-height: 70vh;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(225deg, #121212, #151515);
+    box-shadow:  -40px 40px 80px #080808,
+                 40px -40px 80px #202020;
     z-index: 10;
 }
 section.skills ul li article p{
@@ -62,7 +71,7 @@ section.skills ul li article p.tittle{
     section.skills ul{
         width: 100%;
     }
-    section.skills ul li {
+    section.skills ul li article{
         width: 80%;
         margin: 10px 0;
     }
