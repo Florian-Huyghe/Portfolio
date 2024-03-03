@@ -3,7 +3,6 @@ section.contact{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     min-height: 50vh;
     background-color: rgb(43, 43, 43);
 }
@@ -92,4 +91,22 @@ section.contact div.contact-icon a:hover{
     font-size: 1rem;
   }
 }
-  
+
+@media screen and (max-width: 376px) {
+  section.contact h1 {
+    font-size: 2.2rem;
+  }
+  section.contact div p{
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  section.contact div div.contact-icon a:nth-child(1){
+    font-size: .75rem;
+  }
+}
+@media screen and (max-width: 318px) {
+  section.contact div p{
+    font-size: 1.5rem;
+  }
+}

@@ -140,8 +140,11 @@ section.home-page button {
     }
 }
 @media screen and (max-width: 360px) {
-    section.home-page button {
-        width: 33%;
-        font-size: 0.7rem;
+    .Typewriter__wrapper{
+        font-size: 2.3rem;
+    }
+    
+    .Typewriter__cursor{
+        font-size: 2.3rem;
     }
 }
