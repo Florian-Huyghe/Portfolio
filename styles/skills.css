@@ -31,8 +31,8 @@ section.skills ul li{
     border-radius: 15px;
     margin: 30px 0;
     background: linear-gradient(225deg, #121212, #151515);
-    box-shadow:  -40px 40px 80px #080808,
-                 40px -40px 80px #202020;
+    box-shadow:  10px 10px 20px #0a0a0a,
+    -10px -10px 20px #1a1a1a;
 } 
 section.skills ul li article{
     width: 400px;
@@ -40,8 +40,8 @@ section.skills ul li article{
     padding: 15px;
     border-radius: 15px;
     background: linear-gradient(225deg, #121212, #151515);
-    box-shadow:  -40px 40px 80px #080808,
-                 40px -40px 80px #202020;
+    box-shadow:  10px 10px 20px #0a0a0a,
+    -10px -10px 20px #1a1a1a;
     z-index: 10;
 }
 section.skills ul li article p{
