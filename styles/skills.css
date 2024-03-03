@@ -72,6 +72,7 @@ section.skills ul li article p.tittle{
         width: 100%;
     }
     section.skills ul li {
+        width: 80%;
         margin: 10px 0;
     }
     section.skills ul li:last-child{
