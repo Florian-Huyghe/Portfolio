@@ -35,8 +35,9 @@ section.about div.about-txt  div article{
     padding: 30px 20px;
     border-radius: 50px;
     background: linear-gradient(225deg, #121212, #151515);
-    box-shadow:  -40px 40px 80px #080808,
-                 40px -40px 80px #202020;
+    box-shadow:  17px 17px 34px #0a0a0a,
+    -17px -17px 34px #1a1a1a;
+
 }
 section.about div.about-txt article a{
     transition: all 0.3s ease-in-out;
