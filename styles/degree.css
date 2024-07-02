@@ -18,7 +18,7 @@ section.degree ul{
     min-height: 70vh;
     list-style-type: none;
 }
-section.degree ul li:nth-child(2){
+section.degree ul li{
     margin: 10vh 0;
 }
 section.degree ul li{
@@ -50,7 +50,7 @@ section.degree ul li::before{
     border-radius: 50%;
     background-color: white;
 }
-section.degree ul li:nth-child(-n+2)::after{
+section.degree ul li:nth-child(-n+3)::after{
     position: absolute;
     top: 35px;
     left: -46px;
@@ -88,7 +88,7 @@ section.degree ul li article p.calendar{
     section.degree ul li::before{
         display: none;
     }
-    section.degree ul li:nth-child(-n+2)::after {
+    section.degree ul li:nth-child(-n+3)::after {
         display: none;
     }
 
