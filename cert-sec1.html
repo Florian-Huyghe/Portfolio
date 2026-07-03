@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Florian Huyghe">
+<meta name="description" content="Review de la certification TryHackMe Cyber Security 101 (SEC1) par Florian Huyghe.">
+<meta name="theme-color" content="#0b0e13">
+
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="assets/css/style.css" rel="stylesheet">
+
+<title>Cyber Security 101 (SEC1) — Review | Florian Huyghe</title>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html#home" class="logo"><span class="dim">/</span>fh<span class="accent">_</span></a>
+
+    <nav class="nav" id="nav">
+      <a class="nav-link" href="index.html#home" data-i18n="nav.home">Accueil</a>
+      <a class="nav-link" href="index.html#about" data-i18n="nav.about">À propos</a>
+      <a class="nav-link" href="index.html#timeline" data-i18n="nav.timeline">Parcours</a>
+      <a class="nav-link" href="index.html#skills" data-i18n="nav.skills">Compétences</a>
+      <a class="nav-link active" href="index.html#certifications" data-i18n="nav.certs">Certifications</a>
+      <a class="nav-link" href="index.html#projects" data-i18n="nav.projects">Projets</a>
+      <a class="nav-link" href="index.html#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Langue">
+        <button type="button" data-lang="fr" class="active">FR</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="review-hero">
+    <div class="container">
+      <a class="review-back" href="index.html#certifications">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        <span data-i18n="certReview.common.back">Retour au portfolio</span>
+      </a>
+
+      <div class="review-top">
+        <div class="review-badge-panel" data-reveal>
+          <img src="assets/img/certifications/cyber-security-101-sec1.png" alt="Badge TryHackMe Cyber Security 101 SEC1">
+          <div class="review-badge-actions">
+            <a class="btn btn-primary" href="assets/docs/certifications/cyber-security-101-sec1.pdf" target="_blank" rel="noopener" data-i18n="certReview.common.downloadPdf">Télécharger le certificat (PDF)</a>
+            <a class="btn btn-ghost" href="https://tryhackme.com/p/Flo.H" target="_blank" rel="noopener" data-i18n="certReview.common.thmProfile">Voir mon profil TryHackMe</a>
+          </div>
+        </div>
+
+        <div class="review-title-block" data-reveal data-reveal-delay="1">
+          <p class="section-kicker" data-i18n="certs.kicker">Certifications</p>
+          <h1 data-i18n="certReview.sec1.title">Cyber Security 101 (SEC1)</h1>
+          <p class="review-lede" data-i18n="certReview.sec1.lede">Une introduction pratique à la cybersécurité offensive et défensive : Windows, Linux, réseaux, pentest web, SOC et malware.</p>
+
+          <div class="review-meta-row">
+            <span class="tag">TryHackMe</span>
+            <span class="tag">14/03/2026</span>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-tile pass">
+              <div class="stat-label" data-i18n="certReview.common.statResult">Résultat</div>
+              <div class="stat-value" data-i18n="certReview.common.resultPass">Réussi</div>
+            </div>
+            <div class="stat-tile">
+              <div class="stat-label" data-i18n="certReview.common.statScore">Score</div>
+              <div class="stat-value">670</div>
+            </div>
+            <div class="stat-tile">
+              <div class="stat-label" data-i18n="certReview.common.statPass">Score requis</div>
+              <div class="stat-value">455</div>
+            </div>
+            <div class="stat-tile">
+              <div class="stat-label" data-i18n="certReview.common.statAttempt">Tentative</div>
+              <div class="stat-value">1</div>
+            </div>
+            <div class="stat-tile">
+              <div class="stat-label" data-i18n="certReview.common.statDuration">Durée</div>
+              <div class="stat-value">3h48m49s</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker" data-i18n="certReview.common.sectionsTitle">Détail par section</p>
+      </div>
+      <div class="score-list" id="score-list" data-reveal></div>
+
+      <div class="review-body" data-reveal data-reveal-delay="1" style="margin-top: 64px;">
+        <h2 class="section-title" style="margin-bottom: 22px;" data-i18n="certReview.common.reviewTitle">Mon retour d'expérience</h2>
+        <p data-i18n="certReview.sec1.review1">SEC1 élargit le spectre de SEC0 avec des modules très concrets : administration Windows/Linux, lecture de trafic réseau, bases du pentest web, opérations de sécurité et analyse de malware.</p>
+        <p data-i18n="certReview.sec1.review2">C'est le certificat qui m'a permis de valider une vision d'ensemble avant de me spécialiser côté analyse SOC avec les certifications Security Analyst.</p>
+        <ul>
+          <li data-i18n="certReview.sec1.point1">Fondamentaux Windows et Linux</li>
+          <li data-i18n="certReview.sec1.point2">Lecture de trafic réseau et bases du pentest web</li>
+          <li data-i18n="certReview.sec1.point3">Opérations de sécurité et introduction à l'analyse de malware</li>
+        </ul>
+
+        <h2 class="section-title" style="margin: 40px 0 0; font-size: 1.2rem;" data-i18n="certReview.common.linkedinTitle">Mon post LinkedIn</h2>
+        <a class="li-preview" href="https://www.linkedin.com/posts/florian-huyghe-38713722b_cybersecurity-tryhackme-infosec-ugcPost-7438643122445754368-P5uj/" target="_blank" rel="noopener" data-reveal>
+          <img src="assets/img/social/li-sec1.jpg" alt="Aperçu du post LinkedIn de Florian Huyghe sur les certifications SEC0 et SEC1">
+          <div class="li-preview-meta">
+            <span class="li-preview-domain">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.2 8.75h3.5V21H3.2V8.75zM9.5 8.75h3.35v1.68h.05c.47-.88 1.6-1.8 3.3-1.8 3.53 0 4.18 2.32 4.18 5.35V21h-3.5v-6.32c0-1.5-.03-3.44-2.1-3.44-2.1 0-2.42 1.64-2.42 3.33V21H9.5V8.75z"/></svg>
+              linkedin.com
+            </span>
+            <p class="li-preview-title">#cybersecurity #tryhackme #infosec #learning | Florian Huyghe</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="review-body" data-reveal style="margin-top: 56px;">
+        <h2 class="section-title" style="margin-bottom: 14px; font-size: 1.2rem;" data-i18n="certReview.sec1.examStructureTitle">Comment se déroule l'examen</h2>
+        <p data-i18n="certReview.sec1.examStructure">SEC1 est un examen non surveillé et en open book (toutes les ressources sont autorisées), à réaliser dans une fenêtre de 24h. Il comprend 7 sections de 10 questions chacune (100 points par section, 700 au total), avec des minuteurs individuels de 45 à 60 minutes selon les sections. La partie offensive comprend deux labs pratiques d'une heure chacun. Le score de passage est fixé à 455, avec un retake gratuit inclus.</p>
+      </div>
+
+      <div class="review-body" data-reveal style="margin-top: 56px;">
+        <h2 class="section-title" style="margin-bottom: 8px;" data-i18n="certReview.sec1.prosConsTitle">Le bilan : les + et les -</h2>
+        <p data-i18n="certReview.sec1.prosConsLede">Au-delà de mon expérience, voici une synthèse plus complète du certificat, enrichie par les retours de la communauté.</p>
+
+        <div class="pros-cons-grid">
+          <div class="pros-cons-card pros" data-reveal>
+            <h3>+ <span data-i18n="certReview.common.prosLabel">Points forts</span></h3>
+            <ul id="pros-list"></ul>
+          </div>
+          <div class="pros-cons-card cons" data-reveal data-reveal-delay="1">
+            <h3>− <span data-i18n="certReview.common.consLabel">Points faibles</span></h3>
+            <ul id="cons-list"></ul>
+          </div>
+        </div>
+
+        <p style="margin-top: 20px;" data-i18n="certReview.sec1.prosConsClosing">Sur les points forts, je rejoins complètement l'avis de la communauté : c'est justement ce mélange Windows/Linux/réseaux/pentest qui m'a permis de confirmer mon appétence pour le blue team avant de me spécialiser avec les certifications Security Analyst.</p>
+        <p class="source-note" data-i18n="certReview.sec1.sourceNote">Synthèse enrichie par les retours de la communauté, notamment l'excellente review de <a href="https://dragkob.com/articles/sec1-review/" target="_blank" rel="noopener">dragkob.com</a>.</p>
+      </div>
+
+      <div class="cert-nav-footer">
+        <a class="cert-nav-link" href="cert-sec0.html">
+          ← <span data-i18n="certReview.common.prevCert">Certification précédente</span>
+        </a>
+        <a class="cert-nav-link next" href="cert-sal1.html">
+          <span data-i18n="certReview.common.nextCert">Certification suivante</span> →
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Florian Huyghe</span>
+    <a class="back-to-top" href="index.html#home" data-i18n="footer.top">↑ Haut de page</a>
+  </div>
+</footer>
+
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+(function () {
+  function render() {
+    var lang = document.documentElement.lang === 'en' ? 'en' : 'fr';
+    var data = TRANSLATIONS[lang].certReview.sec1;
+    if (!data) return;
+
+    var scoreEl = document.getElementById('score-list');
+    if (scoreEl && data.sections) {
+      scoreEl.innerHTML = data.sections.map(function (s) {
+        return '<div class="score-row"><span class="score-label">' + s.label + '</span>' +
+          '<span class="score-value">' + s.score + '/100</span>' +
+          '<div class="score-bar"><span style="width:' + s.score + '%"></span></div></div>';
+      }).join('');
+    }
+
+    var prosEl = document.getElementById('pros-list');
+    if (prosEl && data.pros) {
+      prosEl.innerHTML = data.pros.map(function (p) { return '<li>' + p + '</li>'; }).join('');
+    }
+    var consEl = document.getElementById('cons-list');
+    if (consEl && data.cons) {
+      consEl.innerHTML = data.cons.map(function (c) { return '<li>' + c + '</li>'; }).join('');
+    }
+  }
+  document.addEventListener('fh:langchange', render);
+  render();
+})();
+</script>
+</body>
+</html>

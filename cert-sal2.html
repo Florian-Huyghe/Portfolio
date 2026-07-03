@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Florian Huyghe">
+<meta name="description" content="Review de la certification TryHackMe Security Analyst Level 2 (SAL2) par Florian Huyghe.">
+<meta name="theme-color" content="#0b0e13">
+
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="assets/css/style.css" rel="stylesheet">
+
+<title>Security Analyst Level 2 (SAL2) — Review | Florian Huyghe</title>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html#home" class="logo"><span class="dim">/</span>fh<span class="accent">_</span></a>
+
+    <nav class="nav" id="nav">
+      <a class="nav-link" href="index.html#home" data-i18n="nav.home">Accueil</a>
+      <a class="nav-link" href="index.html#about" data-i18n="nav.about">À propos</a>
+      <a class="nav-link" href="index.html#timeline" data-i18n="nav.timeline">Parcours</a>
+      <a class="nav-link" href="index.html#skills" data-i18n="nav.skills">Compétences</a>
+      <a class="nav-link active" href="index.html#certifications" data-i18n="nav.certs">Certifications</a>
+      <a class="nav-link" href="index.html#projects" data-i18n="nav.projects">Projets</a>
+      <a class="nav-link" href="index.html#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Langue">
+        <button type="button" data-lang="fr" class="active">FR</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="review-hero">
+    <div class="container">
+      <a class="review-back" href="index.html#certifications">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        <span data-i18n="certReview.common.back">Retour au portfolio</span>
+      </a>
+
+      <div class="review-top">
+        <div class="review-badge-panel" data-reveal>
+          <img src="assets/img/certifications/security-analyst-level-2-sal2.png" alt="Badge TryHackMe Security Analyst Level 2 SAL2">
+          <div class="review-badge-actions">
+            <a class="btn btn-primary" href="assets/docs/certifications/security-analyst-level-2-sal2.pdf" target="_blank" rel="noopener" data-i18n="certReview.common.downloadPdf">Télécharger le certificat (PDF)</a>
+            <a class="btn btn-ghost" href="https://tryhackme.com/p/Flo.H" target="_blank" rel="noopener" data-i18n="certReview.common.thmProfile">Voir mon profil TryHackMe</a>
+          </div>
+        </div>
+
+        <div class="review-title-block" data-reveal data-reveal-delay="1">
+          <p class="section-kicker" data-i18n="certs.kicker">Certifications</p>
+          <h1 data-i18n="certReview.sal2.title">Security Analyst Level 2 (SAL2)</h1>
+          <p class="review-lede" data-i18n="certReview.sal2.lede">Le niveau avancé : chasse aux menaces, corrélation d'alertes multi-sources et réponse à incident sur des scénarios plus longs et plus ambigus.</p>
+
+          <div class="review-meta-row">
+            <span class="tag">TryHackMe</span>
+            <span class="tag">02/07/2026</span>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-tile pass">
+              <div class="stat-label" data-i18n="certReview.common.statResult">Résultat</div>
+              <div class="stat-value" data-i18n="certReview.common.resultPass">Réussi</div>
+            </div>
+            <div class="stat-tile">
+              <div class="stat-label" data-i18n="certReview.common.statScore">Score</div>
+              <div class="stat-value">85%</div>
+            </div>
+            <div class="stat-tile">
+              <div class="stat-label" data-i18n="certReview.common.statPass">Score requis</div>
+              <div class="stat-value">65%</div>
+            </div>
+            <div class="stat-tile">
+              <div class="stat-label" data-i18n="certReview.common.statAttempt">Tentative</div>
+              <div class="stat-value">1</div>
+            </div>
+            <div class="stat-tile">
+              <div class="stat-label" data-i18n="certReview.common.statDuration">Durée</div>
+              <div class="stat-value">30h05m42s</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker" data-i18n="certReview.common.sectionsTitle">Détail par section</p>
+      </div>
+      <div class="score-list" id="score-list" data-reveal></div>
+
+      <div class="review-body" data-reveal data-reveal-delay="1" style="margin-top: 64px;">
+        <h2 class="section-title" style="margin-bottom: 22px;" data-i18n="certReview.common.reviewTitle">Mon retour d'expérience</h2>
+        <p data-i18n="certReview.sal2.review1">SAL2 est de loin le plus exigeant des quatre : plus de 30 heures d'examen, avec des scénarios de threat hunting nettement plus ambigus que sur SAL1.</p>
+        <p data-i18n="certReview.sal2.review2">J'ai dû corréler des alertes provenant de plusieurs sources et prioriser mes investigations comme le ferait un analyste SOC niveau 2 en conditions réelles. C'est ma certification la plus récente.</p>
+        <ul>
+          <li data-i18n="certReview.sal2.point1">Chasse aux menaces sur des jeux de données ambigus</li>
+          <li data-i18n="certReview.sal2.point2">Corrélation d'alertes multi-sources</li>
+          <li data-i18n="certReview.sal2.point3">Priorisation d'investigation en conditions proches du réel</li>
+        </ul>
+
+        <h2 class="section-title" style="margin: 40px 0 0; font-size: 1.2rem;" data-i18n="certReview.common.linkedinTitle">Mon post LinkedIn</h2>
+        <div class="li-pending" data-reveal>
+          <p data-i18n="certReview.sal2.linkedinPending">Je n'ai pas encore publié sur LinkedIn à propos de SAL2 — la preview du post apparaîtra ici dès que ce sera fait.</p>
+          <a class="cert-link" href="https://www.linkedin.com/in/florian-huyghe-38713722b/" target="_blank" rel="noopener" data-i18n="certReview.common.viewProfile">Voir mon profil LinkedIn →</a>
+        </div>
+      </div>
+
+      <div class="review-body" data-reveal style="margin-top: 56px;">
+        <h2 class="section-title" style="margin-bottom: 14px; font-size: 1.2rem;" data-i18n="certReview.sal2.examStructureTitle">Comment se déroule l'examen</h2>
+        <p data-i18n="certReview.sal2.examStructure">L'examen SAL2 propose 72 heures réparties sur 12 scénarios 100% pratiques, organisés en 3 « shifts » de 4 scénarios chacun. Dans les faits, chaque scénario est chronométré individuellement (1 à 2h) plutôt que sur un temps mutualisé — j'ai personnellement utilisé un peu plus de 30 heures pour l'ensemble.</p>
+      </div>
+
+      <div class="review-body" data-reveal style="margin-top: 56px;">
+        <h2 class="section-title" style="margin-bottom: 8px;" data-i18n="certReview.sal2.prosConsTitle">Le bilan : les + et les -</h2>
+        <p data-i18n="certReview.sal2.prosConsLede">Au-delà de mon ressenti, voici une synthèse plus complète du certificat, enrichie par les retours de la communauté.</p>
+
+        <div class="pros-cons-grid">
+          <div class="pros-cons-card pros" data-reveal>
+            <h3>+ <span data-i18n="certReview.common.prosLabel">Points forts</span></h3>
+            <ul id="pros-list"></ul>
+          </div>
+          <div class="pros-cons-card cons" data-reveal data-reveal-delay="1">
+            <h3>− <span data-i18n="certReview.common.consLabel">Points faibles</span></h3>
+            <ul id="cons-list"></ul>
+          </div>
+        </div>
+
+        <p class="source-note" data-i18n="certReview.sal2.sourceNote">Synthèse enrichie par les retours de la communauté, notamment l'excellente review de <a href="https://dragkob.com/articles/sal2-review/" target="_blank" rel="noopener">dragkob.com</a>.</p>
+      </div>
+
+      <div class="cert-nav-footer">
+        <a class="cert-nav-link" href="cert-sal1.html">
+          ← <span data-i18n="certReview.common.prevCert">Certification précédente</span>
+        </a>
+        <span></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Florian Huyghe</span>
+    <a class="back-to-top" href="index.html#home" data-i18n="footer.top">↑ Haut de page</a>
+  </div>
+</footer>
+
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+(function () {
+  function render() {
+    var lang = document.documentElement.lang === 'en' ? 'en' : 'fr';
+    var data = TRANSLATIONS[lang].certReview.sal2;
+    if (!data) return;
+
+    var scoreEl = document.getElementById('score-list');
+    if (scoreEl && data.sections) {
+      scoreEl.innerHTML = data.sections.map(function (s) {
+        return '<div class="score-row"><span class="score-label">' + s.label + '</span>' +
+          '<span class="score-value">' + s.score + '/100</span>' +
+          '<div class="score-bar"><span style="width:' + s.score + '%"></span></div></div>';
+      }).join('');
+    }
+
+    var prosEl = document.getElementById('pros-list');
+    if (prosEl && data.pros) {
+      prosEl.innerHTML = data.pros.map(function (p) { return '<li>' + p + '</li>'; }).join('');
+    }
+    var consEl = document.getElementById('cons-list');
+    if (consEl && data.cons) {
+      consEl.innerHTML = data.cons.map(function (c) { return '<li>' + c + '</li>'; }).join('');
+    }
+  }
+  document.addEventListener('fh:langchange', render);
+  render();
+})();
+</script>
+</body>
+</html>

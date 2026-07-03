@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Florian Huyghe">
+<meta name="description" content="Florian Huyghe — Étudiant en Mastère Cybersécurité, alternant Cyber Défense. Blue Team, SOC, pentest, administration systèmes & réseaux.">
+<meta name="theme-color" content="#0b0e13">
+
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="assets/css/style.css" rel="stylesheet">
+
+<title>Florian Huyghe — Portfolio Cybersécurité</title>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="#home" class="logo"><span class="dim">/</span>fh<span class="accent">_</span></a>
+
+    <nav class="nav" id="nav">
+      <a class="nav-link active" href="#home" data-i18n="nav.home">Accueil</a>
+      <a class="nav-link" href="#about" data-i18n="nav.about">À propos</a>
+      <a class="nav-link" href="#timeline" data-i18n="nav.timeline">Parcours</a>
+      <a class="nav-link" href="#skills" data-i18n="nav.skills">Compétences</a>
+      <a class="nav-link" href="#certifications" data-i18n="nav.certs">Certifications</a>
+      <a class="nav-link" href="#projects" data-i18n="nav.projects">Projets</a>
+      <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Langue">
+        <button type="button" data-lang="fr" class="active">FR</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="bg-grid" aria-hidden="true"></div>
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="container hero-inner">
+      <div>
+        <span class="hero-status"><span class="dot"></span><span data-i18n="hero.status">Alternant Cybersécurité — Ynov Campus Lille</span></span>
+
+        <h1>Florian Huyghe</h1>
+        <p class="hero-role"><span id="typewriter"></span></p>
+
+        <p class="hero-pitch" data-i18n="hero.pitch">
+          Étudiant en Mastère Cybersécurité (Bac+4), je me spécialise dans la cyber défense et les activités SOC.
+          Curieux et méthodique, je construis mes compétences en détection de menaces, analyse de logs et réponse
+          à incident — sur le terrain en alternance et via des labs pratiques (TryHackMe, Top 1%).
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="assets/docs/FlorianHuygheCV.pdf" download data-i18n="hero.ctaCv">
+            Télécharger mon CV
+          </a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaContact">Me contacter</a>
+        </div>
+
+        <div class="hero-meta">
+          <span class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+            <span data-i18n="hero.meta1">Hazebrouck / Lille, France</span>
+          </span>
+          <span class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 21h8M12 17v4M6 4h12v3a6 6 0 0 1-12 0V4z"/><path d="M6 5H4a2 2 0 0 0 2 4M18 5h2a2 2 0 0 1-2 4"/></svg>
+            <span data-i18n="hero.meta2">Top 1% TryHackMe</span>
+          </span>
+          <span class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 9.5 12 5l10 4.5-10 4.5-10-4.5z"/><path d="M6 11.8v4.4c0 1.4 2.7 2.8 6 2.8s6-1.4 6-2.8v-4.4"/></svg>
+            <span data-i18n="hero.meta3">Mastère 1 Cybersécurité</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker" data-i18n="about.kicker">À propos</p>
+        <h2 class="section-title" data-i18n="about.title">Qui suis-je</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo-wrap" data-reveal>
+          <img class="about-photo" src="assets/img/avatar.png" alt="Portrait de Florian Huyghe">
+          <div class="about-photo-frame" aria-hidden="true"></div>
+          <span class="about-tag" data-i18n="about.tag">whoami</span>
+        </div>
+
+        <div class="about-text" data-reveal data-reveal-delay="1">
+          <p data-i18n="about.p1">
+            Bonjour, je suis <strong>Florian Huyghe</strong>, 22 ans. Je suis actuellement en <strong>Mastère 1
+            Cybersécurité</strong> chez <strong>Ynov Campus Lille</strong>, en alternance chez <strong>Exaperf</strong>
+            en tant que technicien informatique.
+          </p>
+          <p data-i18n="about.p2">
+            Passionné par la protection des systèmes d'information, j'ai construit des bases solides en
+            <strong>Linux, Windows, réseaux et sécurité</strong> à travers mon alternance, mes projets personnels et
+            des plateformes comme <strong>TryHackMe</strong>. Je souhaite aujourd'hui approfondir mes compétences en
+            détection de menaces, analyse de logs et réponse à incident au sein d'une équipe SOC/VOC.
+          </p>
+          <p data-i18n="about.p3">
+            En dehors de l'informatique, je suis passionné de <strong>sports mécaniques</strong> (MotoGP, Tourist
+            Trophy, F1), de <strong>nouvelles technologies</strong> (IA, creative coding, réalité augmentée) et
+            d'<strong>audiovisuel</strong> (photo, cinématographie).
+          </p>
+
+          <div class="about-facts">
+            <div class="fact">
+              <div class="label" data-i18n="about.factLocLabel">Localisation</div>
+              <div class="value" data-i18n="about.factLocValue">Hazebrouck / Lille, France</div>
+            </div>
+            <div class="fact">
+              <div class="label" data-i18n="about.factLangLabel">Langues</div>
+              <div class="value" data-i18n="about.factLangValue">Français (natif), Anglais (B1)</div>
+            </div>
+            <div class="fact">
+              <div class="label" data-i18n="about.factAltLabel">Alternance</div>
+              <div class="value" data-i18n="about.factAltValue">Technicien Informatique — Exaperf</div>
+            </div>
+            <div class="fact">
+              <div class="label" data-i18n="about.factFocusLabel">Focus</div>
+              <div class="value" data-i18n="about.factFocusValue">Cyber défense &amp; SOC/VOC</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section id="timeline" class="timeline-section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker" data-i18n="timeline.kicker">Parcours</p>
+        <h2 class="section-title" data-i18n="timeline.title">Formation &amp; expérience</h2>
+        <p class="section-sub" data-i18n="timeline.sub">Un parcours académique en cybersécurité, doublé d'une alternance technique depuis 2024.</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item is-current" data-reveal>
+          <p class="timeline-date">
+            <span data-i18n="timeline.i1.date">Sept. 2025 — Présent</span>
+          </p>
+          <div class="timeline-card">
+            <h3 data-i18n="timeline.i1.title">Mastère 1 Expert Cybersécurité</h3>
+            <p class="timeline-loc" data-i18n="timeline.i1.loc">Ynov Campus Lille · Lille, France</p>
+            <p data-i18n="timeline.i1.desc1">Programme : pentest avancé, sécurité des infrastructures, audit &amp; analyse d'incidents, gestion des risques, sécurité cloud.</p>
+            <p data-i18n="timeline.i1.desc2">Spécialisation : cybersécurité offensive &amp; défensive.</p>
+            <div class="timeline-tags">
+              <span class="tag" data-i18n="timeline.tagFormation">Formation</span>
+              <span class="tag">Pentest</span>
+              <span class="tag">Cloud</span>
+              <span class="tag">Gouvernance</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-item is-current" data-reveal>
+          <p class="timeline-date">
+            <span data-i18n="timeline.i2.date">Oct. 2024 — Présent</span>
+          </p>
+          <div class="timeline-card">
+            <h3 data-i18n="timeline.i2.title">Technicien Informatique — Alternance</h3>
+            <p class="timeline-loc" data-i18n="timeline.i2.loc">Exaperf — Informatique &amp; Téléphonie · Avelin, France</p>
+            <p data-i18n="timeline.i2.desc1">Administration Active Directory, Windows Server &amp; RDS, déploiement d'hyperviseurs, configuration Firewall / Switch / NAS.</p>
+            <p data-i18n="timeline.i2.desc2">Mise en place de solutions EPP / SIEM / XDR / EDR, support et résolution d'incidents utilisateurs.</p>
+            <div class="timeline-tags">
+              <span class="tag tag-alt" data-i18n="timeline.tagEntreprise">Entreprise</span>
+              <span class="tag">Active Directory</span>
+              <span class="tag">SIEM</span>
+              <span class="tag">Support N1/N2</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-item" data-reveal>
+          <p class="timeline-date">
+            <span data-i18n="timeline.i3.date">Sept. 2024 — Juil. 2025</span>
+          </p>
+          <div class="timeline-card">
+            <h3 data-i18n="timeline.i3.title">Bachelor 3 Cybersécurité</h3>
+            <p class="timeline-loc" data-i18n="timeline.i3.loc">Ynov Campus Lille · Lille, France</p>
+            <p data-i18n="timeline.i3.desc1">Programme : pentest, sécurité réseaux, bases de données, DevOps.</p>
+            <div class="timeline-tags">
+              <span class="tag" data-i18n="timeline.tagFormation">Formation</span>
+              <span class="tag">Pentest</span>
+              <span class="tag">DevOps</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-item" data-reveal>
+          <p class="timeline-date">
+            <span data-i18n="timeline.i4.date">Sept. 2023 — Mai 2024</span>
+          </p>
+          <div class="timeline-card">
+            <h3 data-i18n="timeline.i4.title">Licence 2 Informatique</h3>
+            <p class="timeline-loc" data-i18n="timeline.i4.loc">Université de Lille · Villeneuve-d'Ascq, France</p>
+            <p data-i18n="timeline.i4.desc1">Programme : POO (Java), SQL, PHP, JavaScript, C.</p>
+            <div class="timeline-tags">
+              <span class="tag" data-i18n="timeline.tagFormation">Formation</span>
+              <span class="tag">Java</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-item" data-reveal>
+          <p class="timeline-date">
+            <span data-i18n="timeline.i5.date">Sept. 2021 — Mai 2023</span>
+          </p>
+          <div class="timeline-card">
+            <h3 data-i18n="timeline.i5.title">Licence SESI — Sciences Exactes &amp; de l'Ingénierie</h3>
+            <p class="timeline-loc" data-i18n="timeline.i5.loc">Université de Lille · Villeneuve-d'Ascq, France</p>
+            <p data-i18n="timeline.i5.desc1">Programme : Python, HTML5, CSS3, JavaScript natif. Spécialisation Mathématiques &amp; Informatique.</p>
+            <div class="timeline-tags">
+              <span class="tag" data-i18n="timeline.tagFormation">Formation</span>
+              <span class="tag">Python</span>
+              <span class="tag">Maths</span>
+            </div>
+          </div>
+        </li>
+      </ol>
+
+      <div style="margin-top: 40px;" data-reveal>
+        <a class="btn btn-ghost" href="event.html" data-i18n="timeline.eventsCta">Voir mes salons &amp; événements cyber →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker" data-i18n="skills.kicker">Compétences</p>
+        <h2 class="section-title" data-i18n="skills.title">Boîte à outils</h2>
+        <p class="section-sub" data-i18n="skills.sub">Offensive, défensive, infrastructure : une vision transverse de la sécurité des SI.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-head">
+            <span class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/></svg>
+            </span>
+            <div>
+              <h3 data-i18n="skills.red.title">Red Team &amp; Offensive</h3>
+              <p class="skill-card-sub">offensive-security</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Nmap</span><span class="tag">Gobuster</span><span class="tag">Nikto</span>
+            <span class="tag">DNSenum</span><span class="tag">Burp Suite</span><span class="tag">SQLi</span>
+            <span class="tag">XSS</span><span class="tag">OWASP Top 10</span>
+          </div>
+        </div>
+
+        <div class="skill-card featured" data-reveal data-reveal-delay="1">
+          <div class="skill-card-head">
+            <span class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 5-3.2 7.8-7 9-3.8-1.2-7-4-7-9V6l7-3z"/></svg>
+            </span>
+            <div>
+              <h3 data-i18n="skills.blue.title">Blue Team &amp; Défense</h3>
+              <p class="skill-card-sub">soc / vоc</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">EPP / XDR / EDR</span><span class="tag">SIEM</span><span class="tag">Wireshark</span>
+            <span class="tag">Splunk</span><span class="tag">Autopsy</span><span class="tag">Threat Intel</span>
+            <span class="tag">Incident Response</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-reveal data-reveal-delay="2">
+          <div class="skill-card-head">
+            <span class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="6" rx="1.2"/><rect x="3" y="14" width="18" height="6" rx="1.2"/><circle cx="7" cy="7" r="0.6" fill="currentColor"/><circle cx="7" cy="17" r="0.6" fill="currentColor"/></svg>
+            </span>
+            <div>
+              <h3 data-i18n="skills.sys.title">Systèmes &amp; Réseaux</h3>
+              <p class="skill-card-sub">infrastructure</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Active Directory</span><span class="tag">Windows Server</span><span class="tag">GPO</span>
+            <span class="tag">Linux</span><span class="tag">Proxmox</span><span class="tag">VMware</span>
+            <span class="tag">OSI / TCP-IP</span><span class="tag">VLAN</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-reveal data-reveal-delay="3">
+          <div class="skill-card-head">
+            <span class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            </span>
+            <div>
+              <h3 data-i18n="skills.script.title">Scripting &amp; Automatisation</h3>
+              <p class="skill-card-sub">tooling</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Python</span><span class="tag">Bash</span><span class="tag">PowerShell</span>
+            <span class="tag">n8n</span><span class="tag">Dev web</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-reveal data-reveal-delay="4">
+          <div class="skill-card-head">
+            <span class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            </span>
+            <div>
+              <h3 data-i18n="skills.crypto.title">Cryptographie</h3>
+              <p class="skill-card-sub">fondamentaux</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Chiffrement asymétrique</span><span class="tag">Hachage</span><span class="tag">RSA</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-reveal data-reveal-delay="1">
+          <div class="skill-card-head">
+            <span class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg>
+            </span>
+            <div>
+              <h3 data-i18n="skills.soft.title">Langues &amp; Soft Skills</h3>
+              <p class="skill-card-sub">savoir-être</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Français (natif)</span><span class="tag">Anglais (B1)</span>
+            <span class="tag" data-i18n="skills.soft.tag1">Esprit analytique</span>
+            <span class="tag" data-i18n="skills.soft.tag2">Résolution de problèmes</span>
+            <span class="tag" data-i18n="skills.soft.tag3">Travail en équipe</span>
+            <span class="tag" data-i18n="skills.soft.tag4">Rigueur</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS ============ -->
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker" data-i18n="certs.kicker">Certifications</p>
+        <h2 class="section-title" data-i18n="certs.title">TryHackMe — Top 1%</h2>
+        <p class="section-sub" data-i18n="certs.sub">Un parcours de certification progressif, de la découverte à l'analyse de sécurité niveau 2.</p>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card" data-reveal>
+          <div class="cert-badge"><img src="assets/img/certifications/pre-security-sec0.png" alt="Badge TryHackMe Pre Security SEC0"></div>
+          <div class="cert-body">
+            <h3 data-i18n="certs.sec0.title">Pre Security (SEC0)</h3>
+            <p data-i18n="certs.sec0.desc">Fondamentaux réseaux, sécurité et systèmes d'exploitation.</p>
+            <p class="cert-date">13/03/2026</p>
+            <div class="cert-links">
+              <a class="cert-link" href="assets/docs/certifications/pre-security-sec0.pdf" target="_blank" rel="noopener" data-i18n="certs.viewCert">Voir le certificat →</a>
+              <a class="cert-link is-secondary" href="cert-sec0.html" data-i18n="certs.viewReview">Voir ma review →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-reveal data-reveal-delay="1">
+          <div class="cert-badge"><img src="assets/img/certifications/cyber-security-101-sec1.png" alt="Badge TryHackMe Cyber Security 101 SEC1"></div>
+          <div class="cert-body">
+            <h3 data-i18n="certs.sec1.title">Cyber Security 101 (SEC1)</h3>
+            <p data-i18n="certs.sec1.desc">Bases de la cybersécurité offensive et défensive.</p>
+            <p class="cert-date">14/03/2026</p>
+            <div class="cert-links">
+              <a class="cert-link" href="assets/docs/certifications/cyber-security-101-sec1.pdf" target="_blank" rel="noopener" data-i18n="certs.viewCert">Voir le certificat →</a>
+              <a class="cert-link is-secondary" href="cert-sec1.html" data-i18n="certs.viewReview">Voir ma review →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-reveal data-reveal-delay="2">
+          <div class="cert-badge"><img src="assets/img/certifications/security-analyst-level-1-sal1.png" alt="Badge TryHackMe Security Analyst Level 1 SAL1"></div>
+          <div class="cert-body">
+            <h3 data-i18n="certs.sal1.title">Security Analyst Level 1 (SAL1)</h3>
+            <p data-i18n="certs.sal1.desc">Analyse d'alertes SOC, triage et investigation initiale.</p>
+            <p class="cert-date">18/04/2026</p>
+            <div class="cert-links">
+              <a class="cert-link" href="assets/docs/certifications/security-analyst-level-1-sal1.pdf" target="_blank" rel="noopener" data-i18n="certs.viewCert">Voir le certificat →</a>
+              <a class="cert-link is-secondary" href="cert-sal1.html" data-i18n="certs.viewReview">Voir ma review →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-reveal data-reveal-delay="3">
+          <div class="cert-badge"><img src="assets/img/certifications/security-analyst-level-2-sal2.png" alt="Badge TryHackMe Security Analyst Level 2 SAL2"></div>
+          <div class="cert-body">
+            <h3 data-i18n="certs.sal2.title">Security Analyst Level 2 (SAL2)</h3>
+            <p data-i18n="certs.sal2.desc">Chasse aux menaces avancée, corrélation d'alertes et réponse à incident.</p>
+            <p class="cert-date">02/07/2026</p>
+            <div class="cert-links">
+              <a class="cert-link" href="assets/docs/certifications/security-analyst-level-2-sal2.pdf" target="_blank" rel="noopener" data-i18n="certs.viewCert">Voir le certificat →</a>
+              <a class="cert-link is-secondary" href="cert-sal2.html" data-i18n="certs.viewReview">Voir ma review →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="certs-cta" data-reveal>
+        <a class="btn btn-ghost" href="https://tryhackme.com/p/Flo.H" target="_blank" rel="noopener" data-i18n="certs.ctaThm">Voir mon profil TryHackMe</a>
+        <a class="btn btn-ghost" href="https://www.credly.com/users/florian-huyghe" target="_blank" rel="noopener" data-i18n="certs.ctaCredly">Voir mon profil Credly</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker" data-i18n="projects.kicker">Projets</p>
+        <h2 class="section-title" data-i18n="projects.title">Mise en pratique</h2>
+        <p class="section-sub" data-i18n="projects.sub">Des scénarios concrets, pensés côté attaquant comme côté défenseur.</p>
+      </div>
+
+      <div class="project-feature" data-reveal>
+        <div class="project-feature-body">
+          <h3 data-i18n="projects.ctf.title">CTF Red / Blue Team — Ynov Campus</h3>
+          <p data-i18n="projects.ctf.p1">
+            Conception et mise en place d'un <strong>Capture The Flag</strong> destiné aux étudiants de 1ère et
+            2ème année, simulant une attaque réelle avec une approche double.
+          </p>
+          <p data-i18n="projects.ctf.p2">
+            Côté <strong>Red Team</strong> : scénario d'intrusion réaliste. Côté <strong>Blue Team</strong> :
+            détection, analyse des alertes et réponse à incident depuis un poste SOC.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag tag-red">Red Team</span>
+            <span class="tag tag-alt">Blue Team</span>
+            <span class="tag">SOC</span>
+            <span class="tag">CTF Design</span>
+          </div>
+          <a class="cert-link" style="margin-top: 18px;" href="project-ctf.html" data-i18n="projects.ctf.cta">Voir le projet en détail →</a>
+        </div>
+        <div class="project-terminal">
+          <div class="term-bar"><span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span></div>
+          <pre class="term-log" data-i18n="projects.ctf.log">
+<span class="t">14:02:11</span> Recon — scan Nmap sur le réseau étudiant
+<span class="t">14:09:47</span> <span class="warn">Exploitation — accès initial via service vulnérable</span>
+<span class="t">14:11:03</span> Alerte SIEM déclenchée côté Blue Team
+<span class="t">14:14:52</span> <span class="crit">Escalade de privilèges détectée</span>
+<span class="t">14:19:30</span> Confinement — isolation de la machine compromise
+<span class="t">&gt;</span> <span class="ok">statut : incident contenu, rapport transmis ✓</span></pre>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card" data-reveal>
+          <h3>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="12" cy="18" r="2.2"/><path d="M6.8 7.4 10.5 16.4M17.2 7.4 13.5 16.4M7.2 6h9.6"/></svg>
+            <span data-i18n="projects.pfsense.title">Architecture réseau multi-site — pfSense</span>
+          </h3>
+          <p data-i18n="projects.pfsense.desc">
+            Conception et déploiement d'une architecture interconnectant plusieurs sites via des pare-feu pfSense :
+            VPN site-à-site (IPsec), segmentation VLAN, règles de filtrage et supervision.
+          </p>
+        </div>
+
+        <div class="project-card" data-reveal data-reveal-delay="1">
+          <h3>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            <span data-i18n="projects.lab.title">Home Lab — Proxmox</span>
+          </h3>
+          <p data-i18n="projects.lab.desc">
+            Environnement de virtualisation personnel pour l'entraînement : Active Directory, machines vulnérables,
+            outils d'analyse réseau et simulation d'incidents.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
+        <h2 class="section-title" data-i18n="contact.title">Discutons</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-cards" data-reveal>
+          <a class="contact-card" href="mailto:florian.huyghe.contact@gmail.com">
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+            <span><span class="label" data-i18n="contact.emailLabel">Email</span><br><span class="value">florian.huyghe.contact@gmail.com</span></span>
+          </a>
+          <a class="contact-card" href="tel:+33778140467">
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+            <span><span class="label" data-i18n="contact.phoneLabel">Téléphone</span><br><span class="value">07 78 14 04 67</span></span>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/florian-huyghe-38713722b/" target="_blank" rel="noopener">
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.2 8.75h3.5V21H3.2V8.75zM9.5 8.75h3.35v1.68h.05c.47-.88 1.6-1.8 3.3-1.8 3.53 0 4.18 2.32 4.18 5.35V21h-3.5v-6.32c0-1.5-.03-3.44-2.1-3.44-2.1 0-2.42 1.64-2.42 3.33V21H9.5V8.75z"/></svg></span>
+            <span><span class="label">LinkedIn</span><br><span class="value">Florian Huyghe</span></span>
+          </a>
+          <a class="contact-card" href="https://tryhackme.com/p/Flo.H" target="_blank" rel="noopener">
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 5-3.2 7.8-7 9-3.8-1.2-7-4-7-9V6l7-3z"/></svg></span>
+            <span><span class="label">TryHackMe</span><br><span class="value">Flo.H</span></span>
+          </a>
+          <a class="contact-card" href="https://www.credly.com/users/florian-huyghe" target="_blank" rel="noopener">
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.6 5.3 5.9.9-4.25 4.1 1 5.85L12 15.4l-5.25 2.75 1-5.85L3.5 8.2l5.9-.9L12 2z"/></svg></span>
+            <span><span class="label">Credly</span><br><span class="value">florian-huyghe</span></span>
+          </a>
+        </div>
+
+        <div class="contact-availability" data-reveal data-reveal-delay="1">
+          <h3 data-i18n="contact.boxTitle">En alternance, ouvert aux échanges</h3>
+          <p data-i18n="contact.boxDesc">
+            Actuellement en alternance chez Exaperf jusqu'à la fin de mon Mastère, je reste ouvert aux échanges,
+            retours d'expérience et opportunités futures autour de la cybersécurité — en particulier SOC/Blue Team.
+          </p>
+          <a class="btn btn-primary" href="mailto:florian.huyghe.contact@gmail.com" data-i18n="contact.boxCta">M'envoyer un email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Florian Huyghe</span>
+    <a class="back-to-top" href="#home" data-i18n="footer.top">↑ Haut de page</a>
+  </div>
+</footer>
+
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Florian Huyghe">
+<meta name="description" content="CTF Red / Blue Team — Ynov Campus : exercice croisé 1ère/2ème année sur un incident de sécurité complet (intrusion, phishing, ransomware).">
+<meta name="theme-color" content="#0b0e13">
+
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="assets/css/style.css" rel="stylesheet">
+
+<title>CTF Red / Blue Team — Ynov Campus | Florian Huyghe</title>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html#home" class="logo"><span class="dim">/</span>fh<span class="accent">_</span></a>
+
+    <nav class="nav" id="nav">
+      <a class="nav-link" href="index.html#home" data-i18n="nav.home">Accueil</a>
+      <a class="nav-link" href="index.html#about" data-i18n="nav.about">À propos</a>
+      <a class="nav-link" href="index.html#timeline" data-i18n="nav.timeline">Parcours</a>
+      <a class="nav-link" href="index.html#skills" data-i18n="nav.skills">Compétences</a>
+      <a class="nav-link" href="index.html#certifications" data-i18n="nav.certs">Certifications</a>
+      <a class="nav-link active" href="index.html#projects" data-i18n="nav.projects">Projets</a>
+      <a class="nav-link" href="index.html#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Langue">
+        <button type="button" data-lang="fr" class="active">FR</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="review-hero">
+    <div class="container">
+      <a class="review-back" href="index.html#projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        <span data-i18n="certReview.common.back">Retour au portfolio</span>
+      </a>
+
+      <div>
+        <p class="section-kicker" data-i18n="projectCtf.kicker">Projet</p>
+        <h1 style="color:#fff; font-size: clamp(1.7rem, 3.2vw, 2.4rem);" data-i18n="projectCtf.title">CTF Red / Blue Team — Ynov Campus</h1>
+        <p class="event-lede" data-i18n="projectCtf.lede">Un exercice de sécurité grandeur nature conçu pour faire travailler ensemble des étudiants de 1ère et 2ème année, chacun incarnant un rôle complémentaire sur un même incident.</p>
+        <div class="review-meta-row">
+          <span class="tag tag-red">Red Team</span>
+          <span class="tag tag-alt">Blue Team</span>
+          <span class="tag">Ynov Campus</span>
+          <span class="tag">7 mai 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="review-body" data-reveal>
+        <h2 class="section-title" style="color:#fff; margin-bottom: 14px; font-size: 1.3rem;" data-i18n="projectCtf.contextTitle">Le principe : deux rôles, un seul incident</h2>
+        <p data-i18n="projectCtf.contextP1">L'objectif était de faire travailler ensemble des étudiants de 1ère et de 2ème année sur un même incident de sécurité, avec un binôme <strong>Red Team</strong> / <strong>Blue Team</strong> qui suit la même chronologie des deux côtés du miroir.</p>
+        <p data-i18n="projectCtf.contextP2">L'un joue l'attaquant et progresse dans le système d'information ; l'autre joue l'analyste SOC et doit détecter, corréler et comprendre cette progression à partir des journaux et des alertes. Les deux binômes s'entraident : l'un explique comment l'attaque avance, l'autre comment la détection se construit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker" data-i18n="projectCtf.archTitle">Architecture réseau du scénario</p>
+        <p class="section-sub" data-i18n="projectCtf.archSub" style="margin-top:0;">Un système d'information simulé avec DMZ, poste utilisateurs, contrôleur de domaine et zone SecOps dédiée à la supervision.</p>
+      </div>
+
+      <div class="arch-wrap">
+        <div class="arch-row" data-reveal>
+          <div class="arch-zone external">
+            <div class="arch-zone-label" data-i18n="projectCtf.zoneExternal">Extérieur</div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 18a4 4 0 0 1-.5-7.97A5 5 0 0 1 16.9 8H17a4 4 0 0 1 0 8H7z"/></svg>
+              <div><span class="name">Internet</span></div>
+            </div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+              <div><span class="name">attacker-vm</span><span class="ip">176.120.22.17</span></div>
+            </div>
+          </div>
+
+          <div class="arch-zone dmz">
+            <div class="arch-zone-label">DMZ <span class="cidr">· 172.16.10.0/24</span></div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="6" rx="1"/><rect x="4" y="14" width="16" height="6" rx="1"/><circle cx="7.5" cy="7" r="0.6" fill="currentColor"/><circle cx="7.5" cy="17" r="0.6" fill="currentColor"/></svg>
+              <div><span class="name">srv-web-1</span><span class="ip">172.16.10.10</span></div>
+            </div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="6" rx="1"/><rect x="4" y="14" width="16" height="6" rx="1"/><circle cx="7.5" cy="7" r="0.6" fill="currentColor"/><circle cx="7.5" cy="17" r="0.6" fill="currentColor"/></svg>
+              <div><span class="name">srv-web-2</span><span class="ip">172.16.10.20</span></div>
+            </div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="6" rx="1"/><rect x="4" y="14" width="16" height="6" rx="1"/><circle cx="7.5" cy="7" r="0.6" fill="currentColor"/><circle cx="7.5" cy="17" r="0.6" fill="currentColor"/></svg>
+              <div><span class="name">srv-web-3</span><span class="ip">172.16.10.30</span></div>
+            </div>
+          </div>
+
+          <div class="arch-zone userlan">
+            <div class="arch-zone-label">User LAN <span class="cidr">· 10.0.10.0/24</span></div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="11" rx="1"/><path d="M9 20h6M12 15v5"/></svg>
+              <div><span class="name">wkst-1 (webmaster)</span><span class="ip">10.0.10.21</span></div>
+            </div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="11" rx="1"/><path d="M9 20h6M12 15v5"/></svg>
+              <div><span class="name">wkst-2 (Security Engineer)</span><span class="ip">10.0.10.22</span></div>
+            </div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="11" rx="1"/><path d="M9 20h6M12 15v5"/></svg>
+              <div><span class="name">wkst-3 (Lead Réseau)</span><span class="ip">10.0.10.23</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-row" data-reveal data-reveal-delay="1">
+          <div class="arch-zone secops">
+            <div class="arch-zone-label">SecOps Zone <span class="cidr">· 10.0.30.0/24</span></div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <div><span class="name">admin-jump (bastion)</span><span class="ip">10.0.30.70</span></div>
+            </div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 5-3.2 7.8-7 9-3.8-1.2-7-4-7-9V6l7-3z"/></svg>
+              <div><span class="name">SIEM</span><span class="ip">10.0.30.60</span></div>
+            </div>
+          </div>
+
+          <div class="arch-zone serverlan">
+            <div class="arch-zone-label">Server LAN <span class="cidr">· 10.0.20.0/24</span></div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="6" rx="1"/><rect x="4" y="14" width="16" height="6" rx="1"/><circle cx="7.5" cy="7" r="0.6" fill="currentColor"/><circle cx="7.5" cy="17" r="0.6" fill="currentColor"/></svg>
+              <div><span class="name">dc-1</span><span class="ip">10.0.20.5</span></div>
+            </div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="6" rx="1"/><rect x="4" y="14" width="16" height="6" rx="1"/><circle cx="7.5" cy="7" r="0.6" fill="currentColor"/><circle cx="7.5" cy="17" r="0.6" fill="currentColor"/></svg>
+              <div><span class="name">management-svc</span><span class="ip">Kerberoastable</span></div>
+            </div>
+            <div class="arch-host">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="6" rx="1"/><rect x="4" y="14" width="16" height="6" rx="1"/><circle cx="7.5" cy="7" r="0.6" fill="currentColor"/><circle cx="7.5" cy="17" r="0.6" fill="currentColor"/></svg>
+              <div><span class="name">srv-ftp</span><span class="ip">10.0.20.30</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="arch-flow" data-reveal>
+        <h3 style="color:#fff; font-size: 1rem;" data-i18n="projectCtf.flowTitle">Chemin d'attaque, étape par étape</h3>
+        <ol class="arch-flow-list" id="flow-list"></ol>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker" data-i18n="projectCtf.timelineTitle">Timeline de l'incident</p>
+        <p class="section-sub" data-i18n="projectCtf.timelineSub" style="margin-top:0;">Jeudi 7 mai 2026 — la chronologie complète, telle que reconstituée par les deux équipes.</p>
+      </div>
+
+      <div class="incident-phase" data-reveal>
+        <div class="incident-phase-head">
+          <span class="tag tag-red" data-i18n="projectCtf.phase1Tag">Red Team</span>
+          <h3 data-i18n="projectCtf.phase1Title">Reconnaissance &amp; intrusion web</h3>
+        </div>
+        <div class="incident-terminal"><pre class="term-log" data-i18n="projectCtf.phase1Log">08:00 Lancement de la reconnaissance sur l'extranet du campus depuis Internet</pre></div>
+      </div>
+
+      <div class="incident-phase" data-reveal>
+        <div class="incident-phase-head">
+          <span class="tag tag-red" data-i18n="projectCtf.phase2Tag">Red Team</span>
+          <h3 data-i18n="projectCtf.phase2Title">Pivot interne &amp; ingénierie sociale</h3>
+        </div>
+        <div class="incident-terminal"><pre class="term-log" data-i18n="projectCtf.phase2Log">09:03 Première tentative de connexion SSH vers wkst-1 (webmaster)</pre></div>
+      </div>
+
+      <div class="incident-phase" data-reveal>
+        <div class="incident-phase-head">
+          <span class="tag tag-red" data-i18n="projectCtf.phase3Tag">Red Team</span>
+          <h3 data-i18n="projectCtf.phase3Title">Phishing &amp; post-exploitation</h3>
+        </div>
+        <div class="incident-terminal"><pre class="term-log" data-i18n="projectCtf.phase3Log">11:24 Céline ouvre le mail, télécharge la pièce jointe et active la macro</pre></div>
+      </div>
+
+      <div class="incident-phase" data-reveal>
+        <div class="incident-phase-head">
+          <span class="tag tag-red" data-i18n="projectCtf.phase4Tag">Red Team</span>
+          <h3 data-i18n="projectCtf.phase4Title">Vol de données &amp; exfiltration</h3>
+        </div>
+        <div class="incident-terminal"><pre class="term-log" data-i18n="projectCtf.phase4Log">12:18 Identifiants FTP découverts en clair dans les dossiers de Céline</pre></div>
+      </div>
+
+      <div class="incident-phase" data-reveal>
+        <div class="incident-phase-head">
+          <span class="tag tag-red" data-i18n="projectCtf.phase5Tag">Red Team</span>
+          <h3 data-i18n="projectCtf.phase5Title">Élévation &amp; ransomware</h3>
+        </div>
+        <div class="incident-terminal"><pre class="term-log" data-i18n="projectCtf.phase5Log">13:14 Hash management-svc cassé hors ligne</pre></div>
+      </div>
+
+      <div class="incident-phase" data-reveal>
+        <div class="incident-phase-head">
+          <span class="tag tag-alt" data-i18n="projectCtf.phase6Tag">Blue Team</span>
+          <h3 data-i18n="projectCtf.phase6Title">Détection &amp; réponse</h3>
+        </div>
+        <div class="incident-terminal"><pre class="term-log" data-i18n="projectCtf.phase6Log">14:50 Céline constate ses fichiers chiffrés et alerte l'équipe informatique</pre></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="review-body" data-reveal>
+        <h2 class="section-title" style="margin-bottom: 8px; font-size: 1.2rem;" data-i18n="projectCtf.platformTitle">La plateforme du CTF</h2>
+        <p data-i18n="projectCtf.platformDesc">Le CTF s'est déroulé sur une plateforme dédiée : classement en direct, épreuves de web, cryptographie, forensic et pwn, dans la peau d'analystes enquêtant sur le piratage du campus.</p>
+        <a class="btn btn-ghost" style="margin-top: 16px;" href="https://cybersicherheit.vercel.app/" target="_blank" rel="noopener" data-i18n="projectCtf.platformCta">Voir la plateforme du CTF →</a>
+
+        <h2 class="section-title" style="margin: 40px 0 14px; font-size: 1.2rem;" data-i18n="projectCtf.linkedinTitle">Mon post LinkedIn</h2>
+        <a class="li-preview" href="https://www.linkedin.com/posts/florian-huyghe-38713722b_activity-7459637842022076416-yG2S/" target="_blank" rel="noopener">
+          <img src="assets/img/social/li-ctf.jpg" alt="Aperçu d'une publication LinkedIn d'un participant au CTF Red/Blue Team Ynov Campus">
+          <div class="li-preview-meta">
+            <span class="li-preview-domain">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.2 8.75h3.5V21H3.2V8.75zM9.5 8.75h3.35v1.68h.05c.47-.88 1.6-1.8 3.3-1.8 3.53 0 4.18 2.32 4.18 5.35V21h-3.5v-6.32c0-1.5-.03-3.44-2.1-3.44-2.1 0-2.42 1.64-2.42 3.33V21H9.5V8.75z"/></svg>
+              linkedin.com
+            </span>
+            <p class="li-preview-title">Florian Huyghe</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="cert-nav-footer">
+        <a class="cert-nav-link" href="index.html#projects">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:16px;height:16px;"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+          <span data-i18n="certReview.common.back">Retour au portfolio</span>
+        </a>
+        <span></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Florian Huyghe</span>
+    <a class="back-to-top" href="index.html#home" data-i18n="footer.top">↑ Haut de page</a>
+  </div>
+</footer>
+
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+(function () {
+  function render() {
+    var lang = document.documentElement.lang === 'en' ? 'en' : 'fr';
+    var data = TRANSLATIONS[lang].projectCtf;
+    var el = document.getElementById('flow-list');
+    if (!el || !data || !data.flow) return;
+    el.innerHTML = data.flow.map(function (step) { return '<li>' + step + '</li>'; }).join('');
+  }
+  document.addEventListener('fh:langchange', render);
+  render();
+})();
+</script>
+</body>
+</html>
