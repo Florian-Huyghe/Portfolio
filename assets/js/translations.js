@@ -82,8 +82,7 @@ const TRANSLATIONS = {
         nextCert: "Certification suivante",
         prosLabel: "Points forts",
         consLabel: "Points faibles",
-        linkedinTitle: "Mon post LinkedIn",
-        viewProfile: "Voir mon profil LinkedIn →"
+        linkedinTitle: "Mon post LinkedIn"
       },
       sec0: {
         title: "Pre Security (SEC0)",
@@ -197,7 +196,6 @@ const TRANSLATIONS = {
         point1: "Chasse aux menaces sur des jeux de données ambigus",
         point2: "Corrélation d'alertes multi-sources",
         point3: "Priorisation d'investigation en conditions proches du réel",
-        linkedinPending: "Je n'ai pas encore publié sur LinkedIn à propos de SAL2 — la preview du post apparaîtra ici dès que ce sera fait.",
         examStructureTitle: "Comment se déroule l'examen",
         examStructure: "L'examen SAL2 propose 72 heures réparties sur 12 scénarios 100% pratiques, organisés en 3 « shifts » de 4 scénarios chacun. Dans les faits, chaque scénario est chronométré individuellement (1 à 2h) plutôt que sur un temps mutualisé — j'ai personnellement utilisé un peu plus de 30 heures pour l'ensemble.",
         prosConsTitle: "Le bilan : les + et les -",
@@ -411,8 +409,7 @@ const TRANSLATIONS = {
         nextCert: "Next certification",
         prosLabel: "Pros",
         consLabel: "Cons",
-        linkedinTitle: "My LinkedIn post",
-        viewProfile: "View my LinkedIn profile →"
+        linkedinTitle: "My LinkedIn post"
       },
       sec0: {
         title: "Pre Security (SEC0)",
@@ -526,7 +523,6 @@ const TRANSLATIONS = {
         point1: "Threat hunting across ambiguous datasets",
         point2: "Multi-source alert correlation",
         point3: "Investigation prioritization under realistic conditions",
-        linkedinPending: "I haven't posted on LinkedIn about SAL2 yet — the post preview will show up here once I do.",
         examStructureTitle: "How the exam works",
         examStructure: "The SAL2 exam gives you 72 hours across 12 fully hands-on scenarios, organized into 3 'shifts' of 4 scenarios each. In practice, each scenario is individually time-boxed (1-2h) rather than drawing from a shared pool — I personally used a little over 30 hours in total.",
         prosConsTitle: "The verdict: pros and cons",
