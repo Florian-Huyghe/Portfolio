@@ -634,6 +634,63 @@ section {
   gap: 8px;
 }
 
+.skill-card.wide { grid-column: 1 / -1; }
+
+.skill-subgroup { margin-top: 20px; }
+.skill-subgroup:first-of-type { margin-top: 0; }
+.skill-subgroup-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-faint);
+  margin-bottom: 10px;
+}
+
+.skill-card-body {
+  position: relative;
+  overflow: hidden;
+  transition: max-height .4s var(--ease);
+}
+.skill-card.collapsible .skill-card-body { max-height: 190px; }
+.skill-card.collapsible.expanded .skill-card-body { max-height: none; }
+
+.skill-card-fade {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 52px;
+  background: linear-gradient(to bottom, transparent, var(--surface));
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity .25s var(--ease);
+}
+.skill-card.expanded .skill-card-fade,
+.skill-card.no-toggle .skill-card-fade { opacity: 0; }
+
+.skill-card-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+.skill-card-toggle:hover { color: var(--accent-strong); }
+.skill-card-toggle .toggle-label-less { display: none; }
+.skill-card.expanded .skill-card-toggle .toggle-label-more { display: none; }
+.skill-card.expanded .skill-card-toggle .toggle-label-less { display: inline; }
+.skill-card-toggle .toggle-chevron {
+  width: 14px; height: 14px;
+  transition: transform .3s var(--ease);
+}
+.skill-card.expanded .skill-card-toggle .toggle-chevron { transform: rotate(180deg); }
+.skill-card.no-toggle .skill-card-toggle { display: none; }
+
 /* ==========================================================================
    Certifications
    ========================================================================== */
@@ -1220,4 +1277,45 @@ svg.icon { width: 20px; height: 20px; }
   border: 1px solid var(--border);
   border-radius: var(--radius-m);
   padding: 20px 22px;
+}
+
+/* ==========================================================================
+   Learning paths (continuous training roadmap)
+   ========================================================================== */
+
+.learning-paths-head { margin-top: 56px; margin-bottom: 20px; }
+.learning-paths-head h3 { color: #fff; font-size: 1.05rem; margin-bottom: 8px; }
+.learning-paths-head p { color: var(--text-dim); font-size: 0.9rem; }
+
+.learning-paths { display: grid; gap: 10px; }
+.learning-path-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 15px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+}
+.lp-status {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  color: var(--text-faint);
+  white-space: nowrap;
+  width: 90px;
+  text-align: center;
+}
+.lp-status.done { color: var(--accent-strong); border-color: rgba(63,163,131,0.35); }
+.lp-status.progress { color: var(--amber); border-color: rgba(204,157,84,0.35); }
+.lp-body { color: var(--text-dim); font-size: 0.9rem; }
+.lp-body strong { color: var(--text); }
+
+@media (max-width: 560px) {
+  .learning-path-item { align-items: flex-start; }
 }

@@ -218,6 +218,51 @@
   }
 
   /* ---------------------------------------------------------------------
+     Skill cards: collapsible "voir plus"
+     --------------------------------------------------------------------- */
+  const COLLAPSED_HEIGHT = 190;
+  const collapsibleCards = document.querySelectorAll('.skill-card.collapsible');
+
+  function syncCollapsedState(card) {
+    if (card.classList.contains('expanded')) return;
+    const body = card.querySelector('.skill-card-body');
+    if (!body) return;
+    card.classList.toggle('no-toggle', body.scrollHeight <= COLLAPSED_HEIGHT + 20);
+  }
+
+  collapsibleCards.forEach((card) => {
+    const body = card.querySelector('.skill-card-body');
+    const toggle = card.querySelector('.skill-card-toggle');
+    if (!body || !toggle) return;
+
+    syncCollapsedState(card);
+
+    toggle.addEventListener('click', () => {
+      const expanded = card.classList.toggle('expanded');
+      toggle.setAttribute('aria-expanded', String(expanded));
+      body.style.maxHeight = expanded ? body.scrollHeight + 'px' : '';
+    });
+  });
+
+  if (collapsibleCards.length) {
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        collapsibleCards.forEach((card) => {
+          const body = card.querySelector('.skill-card-body');
+          if (!body) return;
+          if (card.classList.contains('expanded')) {
+            body.style.maxHeight = body.scrollHeight + 'px';
+          } else {
+            syncCollapsedState(card);
+          }
+        });
+      }, 200);
+    });
+  }
+
+  /* ---------------------------------------------------------------------
      Footer year + init
      --------------------------------------------------------------------- */
   const yearEl = document.getElementById('year');
