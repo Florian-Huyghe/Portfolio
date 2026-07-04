@@ -646,8 +646,8 @@ section {
 
 @media (min-width: 760px) {
   .skills-row { flex-wrap: nowrap; }
-  .skill-card { flex: 0 1 260px; }
-  .skill-card.collapsible.expanded { flex: 0 1 540px; }
+  .skill-card { flex: 1 1 260px; }
+  .skill-card.collapsible.expanded { flex: 2 1 540px; }
 }
 
 .skill-subgroup { margin-top: 20px; }
