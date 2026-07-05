@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<link href="assets/css/style.css?v=3" rel="stylesheet">
+<link href="assets/css/style.css?v=5" rel="stylesheet">
 
 <title>Florian Huyghe — Portfolio Cybersécurité</title>
 </head>
@@ -258,7 +258,7 @@
       </div>
 
       <div class="skills-grid">
-        <div class="skill-card wide featured" data-reveal>
+        <div class="skill-card wide featured collapsible" data-reveal>
           <div class="skill-card-head">
             <span class="skill-icon">
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 5-3.2 7.8-7 9-3.8-1.2-7-4-7-9V6l7-3z"/></svg>
@@ -269,56 +269,64 @@
             </div>
           </div>
 
-          <div class="skill-subgroup">
-            <p class="skill-subgroup-label" data-i18n="skills.blue.toolsLabel">Outils</p>
-            <div class="skill-tags">
-              <span class="tag">Microsoft Defender for Endpoint</span><span class="tag">CrowdStrike Falcon</span>
-              <span class="tag">SentinelOne</span><span class="tag">Microsoft Defender XDR</span>
-              <span class="tag">Splunk</span><span class="tag">Elastic Stack (ELK)</span>
-              <span class="tag">Microsoft Sentinel</span><span class="tag">Wazuh</span><span class="tag">QRadar</span>
-              <span class="tag">Wireshark</span><span class="tag">Zeek</span><span class="tag">Suricata</span>
-              <span class="tag">Snort</span><span class="tag">Velociraptor</span><span class="tag">Volatility</span>
-              <span class="tag">TheHive</span><span class="tag">Cortex</span><span class="tag">MISP</span>
-              <span class="tag">OpenCTI</span><span class="tag">VirusTotal</span><span class="tag">ANY.RUN</span>
-              <span class="tag">Cuckoo Sandbox</span>
+          <div class="skill-card-body">
+            <div class="skill-subgroup">
+              <p class="skill-subgroup-label" data-i18n="skills.blue.toolsLabel">Outils</p>
+              <div class="skill-tags">
+                <span class="tag">Microsoft Defender for Endpoint</span><span class="tag">CrowdStrike Falcon</span>
+                <span class="tag">SentinelOne</span><span class="tag">Microsoft Defender XDR</span>
+                <span class="tag">Splunk</span><span class="tag">Elastic Stack (ELK)</span>
+                <span class="tag">Microsoft Sentinel</span><span class="tag">Wazuh</span><span class="tag">QRadar</span>
+                <span class="tag">Wireshark</span><span class="tag">Zeek</span><span class="tag">Suricata</span>
+                <span class="tag">Snort</span><span class="tag">Velociraptor</span><span class="tag">Volatility</span>
+                <span class="tag">TheHive</span><span class="tag">Cortex</span><span class="tag">MISP</span>
+                <span class="tag">OpenCTI</span><span class="tag">VirusTotal</span><span class="tag">ANY.RUN</span>
+                <span class="tag">Cuckoo Sandbox</span>
+              </div>
             </div>
-          </div>
 
-          <div class="skill-subgroup">
-            <p class="skill-subgroup-label" data-i18n="skills.blue.methodsLabel">Méthodologies &amp; Techniques</p>
-            <div class="skill-tags">
-              <span class="tag">Security Operations Center (SOC)</span>
-              <span class="tag">Vulnerability Operations Center (VOC)</span>
-              <span class="tag">Endpoint Protection Platform (EPP)</span>
-              <span class="tag">Endpoint Detection &amp; Response (EDR)</span>
-              <span class="tag">Extended Detection &amp; Response (XDR)</span>
-              <span class="tag">Security Information &amp; Event Management (SIEM)</span>
-              <span class="tag">Security Orchestration, Automation &amp; Response (SOAR)</span>
-              <span class="tag">Threat Intelligence</span>
-              <span class="tag">Threat Hunting</span>
-              <span class="tag">Incident Response</span>
-              <span class="tag">Digital Forensics &amp; Incident Response (DFIR)</span>
-              <span class="tag" data-i18n="skills.blue.m1">Analyse de malwares</span>
-              <span class="tag" data-i18n="skills.blue.m2">Analyse de phishing</span>
-              <span class="tag" data-i18n="skills.blue.m3">Détection et analyse d'IOC / IOA</span>
-              <span class="tag" data-i18n="skills.blue.m4">Création de règles YARA</span>
-              <span class="tag" data-i18n="skills.blue.m5">Création de règles Sigma</span>
-              <span class="tag">Detection Engineering</span>
-              <span class="tag" data-i18n="skills.blue.m6">Analyse des journaux (Logs)</span>
-              <span class="tag" data-i18n="skills.blue.m7">Corrélation d'événements</span>
-              <span class="tag" data-i18n="skills.blue.m8">Analyse réseau (PCAP)</span>
-              <span class="tag" data-i18n="skills.blue.m9">Triage d'alertes</span>
-              <span class="tag" data-i18n="skills.blue.m10">Gestion des incidents de sécurité</span>
-              <span class="tag" data-i18n="skills.blue.m11">Investigation post-compromission</span>
-              <span class="tag" data-i18n="skills.blue.m12">Durcissement des systèmes (Hardening)</span>
-              <span class="tag" data-i18n="skills.blue.m13">Gestion des vulnérabilités</span>
-              <span class="tag">MITRE ATT&amp;CK</span>
-              <span class="tag">MITRE D3FEND</span>
-              <span class="tag">Cyber Kill Chain</span>
-              <span class="tag">NIST Cybersecurity Framework (CSF)</span>
-              <span class="tag" data-i18n="skills.blue.m14">Rédaction de rapports d'investigation</span>
+            <div class="skill-subgroup">
+              <p class="skill-subgroup-label" data-i18n="skills.blue.methodsLabel">Méthodologies &amp; Techniques</p>
+              <div class="skill-tags">
+                <span class="tag">Security Operations Center (SOC)</span>
+                <span class="tag">Vulnerability Operations Center (VOC)</span>
+                <span class="tag">Endpoint Protection Platform (EPP)</span>
+                <span class="tag">Endpoint Detection &amp; Response (EDR)</span>
+                <span class="tag">Extended Detection &amp; Response (XDR)</span>
+                <span class="tag">Security Information &amp; Event Management (SIEM)</span>
+                <span class="tag">Security Orchestration, Automation &amp; Response (SOAR)</span>
+                <span class="tag">Threat Intelligence</span>
+                <span class="tag">Threat Hunting</span>
+                <span class="tag">Incident Response</span>
+                <span class="tag">Digital Forensics &amp; Incident Response (DFIR)</span>
+                <span class="tag" data-i18n="skills.blue.m1">Analyse de malwares</span>
+                <span class="tag" data-i18n="skills.blue.m2">Analyse de phishing</span>
+                <span class="tag" data-i18n="skills.blue.m3">Détection et analyse d'IOC / IOA</span>
+                <span class="tag" data-i18n="skills.blue.m4">Création de règles YARA</span>
+                <span class="tag" data-i18n="skills.blue.m5">Création de règles Sigma</span>
+                <span class="tag">Detection Engineering</span>
+                <span class="tag" data-i18n="skills.blue.m6">Analyse des journaux (Logs)</span>
+                <span class="tag" data-i18n="skills.blue.m7">Corrélation d'événements</span>
+                <span class="tag" data-i18n="skills.blue.m8">Analyse réseau (PCAP)</span>
+                <span class="tag" data-i18n="skills.blue.m9">Triage d'alertes</span>
+                <span class="tag" data-i18n="skills.blue.m10">Gestion des incidents de sécurité</span>
+                <span class="tag" data-i18n="skills.blue.m11">Investigation post-compromission</span>
+                <span class="tag" data-i18n="skills.blue.m12">Durcissement des systèmes (Hardening)</span>
+                <span class="tag" data-i18n="skills.blue.m13">Gestion des vulnérabilités</span>
+                <span class="tag">MITRE ATT&amp;CK</span>
+                <span class="tag">MITRE D3FEND</span>
+                <span class="tag">Cyber Kill Chain</span>
+                <span class="tag">NIST Cybersecurity Framework (CSF)</span>
+                <span class="tag" data-i18n="skills.blue.m14">Rédaction de rapports d'investigation</span>
+              </div>
             </div>
+            <div class="skill-card-fade"></div>
           </div>
+          <button type="button" class="skill-card-toggle" aria-expanded="false">
+            <span class="toggle-label-more" data-i18n="skills.seeMore">Voir plus</span>
+            <span class="toggle-label-less" data-i18n="skills.seeLess">Voir moins</span>
+            <svg class="icon toggle-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
         </div>
 
         <div class="skills-row">
@@ -806,7 +814,7 @@
   </div>
 </footer>
 
-<script src="assets/js/translations.js?v=3"></script>
-<script src="assets/js/main.js?v=3"></script>
+<script src="assets/js/translations.js?v=5"></script>
+<script src="assets/js/main.js?v=5"></script>
 </body>
 </html>
