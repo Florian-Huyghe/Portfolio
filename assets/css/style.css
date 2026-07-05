@@ -621,9 +621,10 @@ section {
   display: flex;
   align-items: center;
   gap: 12px;
-  min-height: 60px;
+  min-height: 40px;
   margin-bottom: 16px;
 }
+.skill-card-head > div { min-width: 0; }
 .skill-icon {
   width: 36px; height: 36px;
   border-radius: var(--radius-s);
@@ -635,7 +636,7 @@ section {
 }
 .skill-card.featured .skill-icon { background: var(--accent-soft); border-color: transparent; color: var(--accent-strong); }
 
-.skill-card h3 { color: #fff; font-size: 1rem; }
+.skill-card h3 { color: #fff; font-size: 1rem; overflow-wrap: break-word; word-break: break-word; }
 .skill-card-sub { font-size: 0.78rem; color: var(--text-faint); margin-top: 2px; font-family: var(--font-mono); }
 
 .skill-tags {

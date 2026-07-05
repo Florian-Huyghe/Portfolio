@@ -244,7 +244,25 @@
     });
   });
 
-  if (collapsibleCards.length) {
+  // Card titles wrap to a different number of lines depending on their length,
+  // so the head (icon + title) can end up taller on one card than its row-mates.
+  // Measure the tallest head per row and align the rest to it.
+  const skillRows = document.querySelectorAll('.skills-row');
+
+  function syncHeadHeights() {
+    skillRows.forEach((row) => {
+      const heads = Array.from(row.querySelectorAll('.skill-card-head'));
+      if (!heads.length) return;
+      heads.forEach((h) => { h.style.minHeight = ''; });
+      const max = Math.max(...heads.map((h) => h.getBoundingClientRect().height));
+      heads.forEach((h) => { h.style.minHeight = max + 'px'; });
+    });
+  }
+
+  syncHeadHeights();
+  document.addEventListener('fh:langchange', () => setTimeout(syncHeadHeights, 0));
+
+  if (collapsibleCards.length || skillRows.length) {
     let resizeTimer;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimer);
@@ -258,6 +276,7 @@
             syncCollapsedState(card);
           }
         });
+        syncHeadHeights();
       }, 200);
     });
   }
