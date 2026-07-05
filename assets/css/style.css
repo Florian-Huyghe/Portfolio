@@ -639,6 +639,12 @@ section {
 .skill-card h3 { color: #fff; font-size: 1rem; overflow-wrap: break-word; word-break: break-word; }
 .skill-card-sub { font-size: 0.78rem; color: var(--text-faint); margin-top: 2px; font-family: var(--font-mono); }
 
+@media (min-width: 760px) and (max-width: 1160px) {
+  .skill-card-head { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .skill-card h3 { font-size: 0.85rem; }
+  .skill-card-sub { font-size: 0.68rem; }
+}
+
 .skill-tags {
   display: flex;
   flex-wrap: wrap;

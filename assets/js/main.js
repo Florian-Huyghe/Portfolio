@@ -261,6 +261,9 @@
 
   syncHeadHeights();
   document.addEventListener('fh:langchange', () => setTimeout(syncHeadHeights, 0));
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(syncHeadHeights);
+  }
 
   if (collapsibleCards.length || skillRows.length) {
     let resizeTimer;
