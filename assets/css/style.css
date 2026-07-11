@@ -544,6 +544,7 @@ section {
   content: '';
   position: absolute;
   left: 0;
+  transform: translateX(-50%);
   top: 0;
   bottom: 0;
   width: 2px;
@@ -559,7 +560,8 @@ section {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -37px;
+  left: -32px;
+  transform: translateX(-50%);
   top: 4px;
   width: 12px; height: 12px;
   border-radius: 50%;
