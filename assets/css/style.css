@@ -539,7 +539,15 @@ section {
   margin: 0;
   position: relative;
   padding-left: 32px;
-  border-left: 1px solid var(--border-strong);
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border-strong);
 }
 
 .timeline-item {
@@ -551,12 +559,13 @@ section {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -38px;
+  left: -37px;
   top: 4px;
   width: 12px; height: 12px;
   border-radius: 50%;
   background: var(--bg);
   border: 2px solid var(--accent);
+  z-index: 1;
 }
 .timeline-item.is-current::before {
   background: var(--accent);
